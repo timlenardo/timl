@@ -30,10 +30,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 var path = require('path');
+const index = path.join(__dirname, 'gatsby', 'public', 'index.html');
+const public = path.join(__dirname, 'gatsby', 'public');
 
-app.use(express.static('./gatsby/public'))
+app.use(express.static(public))
 app.use('/users', usersRouter);
-app.get('/', function(req, res) { res.sendfile(__dirname + '/gatsby/public/index.html'); });
+app.get('/', function(req, res) { res.sendfile(index); });
+
 // app.get('/apps', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
 // app.get('/writing', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
 // app.get('/speaking', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
