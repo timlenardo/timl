@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const appConstants = require("../config/appConstants");
 const axios = require('axios');
 const db = require("../models");
