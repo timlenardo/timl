@@ -54,19 +54,19 @@ module.exports = app;
 
 if(env == 'dev' ) {
     db.sequelize.sync().then(function() {
-        sequelize_fixtures.loadFile('fixtures/prod_data.json', models).then(function(){
+        // sequelize_fixtures.loadFile('fixtures/prod_data.json', models).then(function(){
           http.createServer(app).listen(app.get('port'), function() {
               console.log('DEVExpress server listening on port ' + app.get('port'));
           })
-        });
+        // });
     });
 } else {
     db.sequelize.sync().then(function() {
-        sequelize_fixtures.loadFile('fixtures/prod_data.json', models).then(function(){
+        // sequelize_fixtures.loadFile('fixtures/prod_data.json', models).then(function(){
           http.createServer(app).listen(app.get('port'), function(){
               console.log('Express server listening on port ' + app.get('port'));
           });
-        });
+        // });
     });
 }
 
