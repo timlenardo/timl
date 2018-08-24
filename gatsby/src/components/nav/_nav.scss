@@ -1,0 +1,110 @@
+@import './sass/colors';
+@import './sass/bootstrap';
+
+.nav {
+  display: block;
+  width: 100%;
+  background: $color_nav;
+  max-width: 336px;
+  min-width: 180px;
+  flex: 1;
+
+  .nav-chop {
+    margin: 3.5rem 0 5rem 0;
+  }
+
+  .nav-links,
+  .nav-chop {
+    max-width: 140px;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-top a {
+    display: none;
+  }
+
+  .nav-links a {
+    color: #008a87;
+  }
+
+  .nav-links a {
+    color: $color_title;
+    line-height: 1.3125rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    &.active,
+    &:active,
+    &:hover {
+      color: $color_main;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  main {
+    margin-top: 40px;
+  }
+  .nav {
+    max-width: none;
+    position: fixed;
+    top: 0;
+
+    &,
+    > div,
+    > div > div {
+      user-select: none;
+    }
+
+    .nav-open & {
+      height: 100vh;
+      position: absolute;
+      z-index: 1000;
+
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    background: $color_body;
+
+    .nav-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 22px;
+      padding: 24px 20px;
+      width: 100%;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 22px;
+        width: 32px;
+      }
+    }
+    .nav-links {
+      margin-top: 2.75rem;
+      display: none;
+      flex: 1;
+      max-width: none;
+      a {
+        font-family: 'Nouvelle Vague Black';
+        font-size: 2.75rem;
+        line-height: 5.125rem;
+        padding-left: 3.75rem;
+      }
+    }
+
+    .nav-chop {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.AppCard {
+  max-width: 327px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .background {
+    max-width: 327px;
+    max-height: 240px;
+    background: #f1f3f6;
+    margin-bottom: 16px;
+    z-index:10;
+    background-color: transparent;
+  }
+
+  .fill {
+    position:absolute;
+    width:153px;
+    height:207px;
+    margin-left:88px;
+    margin-top:32px;
+    z-index:5;
+  }
+
+  .fillDesktop {
+    position:absolute;
+    width:256px;
+    height:160px;
+    margin-left:36px;
+    margin-top:34px;
+    z-index:5;
+  }
+
+  .AppCard-info {
+    display: flex;
+    margin-left: 19px;
+    align-items: center;
+    justify-content: center;
+
+    &--title,
+    &--subtitle {
+      flex: 1;
+    }
+    &--title {
+      color: #000;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    &--subtitle {
+      font-size: 0.8125rem;
+      font-weight: normal;
+    }
+  }
+}
+
+//.AppCard:hover {
+//  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+//}

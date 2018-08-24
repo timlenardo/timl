@@ -1,0 +1,15 @@
+.Hero {
+  h1 {
+    margin: 0;
+  }
+  img {
+    border-radius: 50%;
+    min-width: 145px;
+    min-height: 145px;
+    max-width: 175px;
+    max-height: 175px;
+    width: 175px;
+    height: 175px;
+    user-select: none;
+  }
+}

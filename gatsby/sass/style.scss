@@ -1,0 +1,52 @@
+@import 'colors';
+@import 'mixins/mixins';
+@import 'typography';
+@import 'bootstrap';
+@import 'global';
+
+.pre-footer {
+  min-height: calc(100vh - 570px);
+  flex-wrap: wrap;
+}
+
+main {
+  background: $color_body;
+  padding: 25px;
+  flex-grow: 1;
+  max-width: 100%;
+
+  .content {
+    padding-top:30px;
+  }
+
+  .toggled & {
+    display: none;
+  }
+
+  p {
+    max-width: 680px;
+  }
+
+  .appcards {
+    display: flex;
+    margin-bottom: 3em;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      max-width: 670px;
+    }
+
+    div.AppCard {
+      margin: 0 auto 2em auto;
+      @include media-breakpoint-up(md) {
+        margin-left: 16px;
+
+        &:nth-child(odd) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

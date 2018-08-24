@@ -1,0 +1,15 @@
+@import './sass/colors';
+
+.Email {
+  input[type='text'] {
+    border: 0;
+    border-radius: 6px;
+  }
+  .form-control {
+    color: $color_footer_text;
+    &:focus {
+      color: $color_text;
+      box-shadow: none;
+    }
+  }
+}

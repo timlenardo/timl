@@ -1,0 +1,34 @@
+{
+  "name": "gatsby-react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "author": "Chase Colman",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.1.0",
+    "axios": "^0.18.0",
+    "babel-runtime": "^6.26.0",
+    "bootstrap": "4.1.3",
+    "core-js": "^2.5.7",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-postcss-sass": "^1.0.22",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "itunesconnectanalytics": "^0.4.3",
+    "pixrem": "^4.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "svg-sprite-loader": "3.2.6"
+  },
+  "devDependencies": {
+    "gatsby-cli": "^1.1.58",
+    "prettier": "1.14.0"
+  }
+}
