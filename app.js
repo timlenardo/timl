@@ -29,10 +29,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(express.static('../gatsby/public'))
-app.get('*', function(req, res) {
-    res.sendfile('../gatsby/public/index.html');
-});
+var path = require('path');
+
+app.use(express.static(path.resolve('gatsby/public')))
+app.get('/', function(req, res) { res.sendfile(path.resolve('gatsby/public/index.html')); });
+app.get('/apps', function(req, res) { res.sendfile(path.resolve('gatsby/public/index.html')); });
+app.get('/writing', function(req, res) { res.sendfile(path.resolve('gatsby/public/index.html')); });
+app.get('/speaking', function(req, res) { res.sendfile(path.resolve('gatsby/public/index.html')); });
+app.get('/contact', function(req, res) { res.sendfile(path.resolve('gatsby/public/index.html')); });
 
 app.use('/users', usersRouter);
 
