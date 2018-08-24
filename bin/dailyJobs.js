@@ -13,8 +13,8 @@ var totalAndroid = 1000000;
 var totalBoomerang = 123000000;
 
 // Naoki
-var username = NAOKI_DATA_USERNAME;
-var password = NAOKI_DATA_PASSWORD;
+var username = process.env.NAOKI_DATA_USERNAME;
+var password = process.env.NAOKI_DATA_PASSWORD;
 var naokiinstance = new Itunes(username, password, {
     errorCallback: function(e) {
         console.log('Error logging in: ' + e);
@@ -57,8 +57,8 @@ naokiinstance.getApps(function(error, data) {
 
 
 // Personal
-var username = PERSONAL_DATA_USERNAME;
-var password = PERSONAL_DATA_PASSWORD;
+var username = process.env.PERSONAL_DATA_USERNAME;
+var password = process.env.PERSONAL_DATA_PASSWORD;
 var personalinstance = new Itunes(username, password, {
     errorCallback: function(e) {
         console.log('Error logging in: ' + e);
