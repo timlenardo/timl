@@ -43,7 +43,7 @@ naokiinstance.getApps(function(error, data) {
                     var totalInstalls = (totalUnits + totalAndroid + totalBoomerang);
                     db.InstallCount.create({
                         category: "total",
-                        installs: totalInstalls
+                        installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
                         appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
                     }).catch(function(error) {
@@ -87,7 +87,7 @@ personalinstance.getApps(function(error, data) {
                     var totalInstalls = (totalUnits + totalAndroid + totalBoomerang);
                     db.InstallCount.create({
                         category: "total",
-                        installs: totalInstalls
+                        installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
                         appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
                     }).catch(function(error) {
@@ -131,7 +131,7 @@ mangoinstance.getApps(function(error, data) {
                     var totalInstalls = (totalUnits + totalAndroid + totalBoomerang);
                     db.InstallCount.create({
                         category: "total",
-                        installs: totalInstalls
+                        installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
                         appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
                     }).catch(function(error) {
@@ -175,7 +175,7 @@ rlinstance.getApps(function(error, data) {
                     var totalInstalls = (totalUnits + totalAndroid + totalBoomerang);
                     db.InstallCount.create({
                         category: "total",
-                        installs: totalInstalls
+                        installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
                         appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
                     }).catch(function(error) {
@@ -190,10 +190,10 @@ rlinstance.getApps(function(error, data) {
 
 axios.get('https://www.plugco.in/installs')
     .then(response => {
-        count = parseInt(response['data']['count']);
+        var count = parseInt(response['data']['count']);
         db.InstallCount.create({
             category: "total",
-            installs: count
+            installs: parseInt(count)
         }).then(function(installCount) {
             appConstants.sendEmail('tim@jetfuel.it', "JetFuel Installs added", "Success: " + count, null);
         }).catch(function(error) {
