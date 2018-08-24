@@ -15,7 +15,7 @@ const models = require('./models');
 
 const appConstants = require("./config/appConstants");
 const axios = require('axios');
-
+const counterController = require('./controllers/counter');
 
 var app = express();
 
@@ -33,14 +33,13 @@ var path = require('path');
 const index = path.join(__dirname, 'gatsby', 'public', 'index.html');
 const public = path.join(__dirname, 'gatsby', 'public');
 
+
 app.use(express.static(public))
 app.use('/users', usersRouter);
-app.get('/', function(req, res) { res.sendfile(index); });
 
-// app.get('/apps', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-// app.get('/writing', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-// app.get('/speaking', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-// app.get('/contact', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
+// counterController.getInstallTotalRate();
+
+// app.get('/')
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

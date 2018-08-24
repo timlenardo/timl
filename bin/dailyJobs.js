@@ -192,7 +192,7 @@ axios.get('https://www.plugco.in/installs')
     .then(response => {
         var count = parseInt(response['data']['count']);
         db.InstallCount.create({
-            category: "total",
+            category: "jetfuel",
             num_installs: parseInt(count)
         }).then(function(installCount) {
             appConstants.sendEmail('tim@jetfuel.it', "JetFuel Installs added", "Success: " + count, null);
