@@ -33,7 +33,11 @@ var path = require('path');
 
 app.use(express.static('./gatsby/public'))
 app.use('/users', usersRouter);
-
+app.get('/', function(req, res) { res.sendfile(__dirname + '/gatsby/public/index.html'); });
+// app.get('/apps', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
+// app.get('/writing', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
+// app.get('/speaking', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
+// app.get('/contact', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
