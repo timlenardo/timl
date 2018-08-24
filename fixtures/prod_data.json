@@ -1,0 +1,30 @@
+[
+  {
+    "model": "InstallCount",
+    "data": {
+      "num_installs": 2000000,
+      "category": "jetfuel"
+    }
+  },
+  {
+    "model": "InstallCount",
+    "data": {
+      "num_installs": 2001000,
+      "category": "jetfuel"
+    }
+  },
+  {
+    "model": "InstallCount",
+    "data": {
+      "num_installs": 134000000,
+      "category": "jetfuel"
+    }
+  },
+  {
+    "model": "InstallCount",
+    "data": {
+      "num_installs": 134001000,
+      "category": "jetfuel"
+    }
+  }
+]
