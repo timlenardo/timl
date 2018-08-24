@@ -1,36 +1,14 @@
 # https://github.com/wearehive/project-guidelines/blob/master/.gitignore
 
-# Gatsby
-.cache/
-public/
-
-### Node ###
-
 # Logs
 logs
 *.log*
 
-# Optional npm cache directory
-.npm
 
-# Dependency directories
-/node_modules
-/jspm_packages
-/bower_components
-
-# Yarn Integrity file
-.yarn-integrity
-
-# Optional eslint cache
-.eslintcache
 
 # dotenv environment variables file(s)
 .env
 .env.*
-
-#Build generated
-dist/
-build/
 
 
 ### SublimeText ###

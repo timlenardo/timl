@@ -1,0 +1,60 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-d6fbeb2a84ddf06f7f93.js",
+      "component---src-pages-index-js-d6fbeb2a84ddf06f7f93.js.map"
+    ],
+    "path---": [
+      "path----7cb6f6b3c7f7f20bf9e1.js",
+      "path----7cb6f6b3c7f7f20bf9e1.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-e39c87b3190d2306a82c.js",
+      "component---src-pages-contact-js-e39c87b3190d2306a82c.js.map"
+    ],
+    "component---src-pages-apps-js": [
+      "component---src-pages-apps-js-715e0617f8352b79c57d.js",
+      "component---src-pages-apps-js-715e0617f8352b79c57d.js.map"
+    ],
+    "component---src-pages-speaking-js": [
+      "component---src-pages-speaking-js-3c95edb18b6251acae5f.js",
+      "component---src-pages-speaking-js-3c95edb18b6251acae5f.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-8e5f5c0f8ca13c898dba.js",
+      "component---src-layouts-index-js-8e5f5c0f8ca13c898dba.js.map"
+    ],
+    "path---index": [
+      "path---index-869b68924aff97ba025a.js",
+      "path---index-869b68924aff97ba025a.js.map"
+    ],
+    "path---speaking": [
+      "path---speaking-a0e39f21c11f6a62c5ab.js",
+      "path---speaking-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---writing": [
+      "path---writing-a0e39f21c11f6a62c5ab.js",
+      "path---writing-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-ea685e1ae8d80364a7ca.js",
+      "commons-ea685e1ae8d80364a7ca.js.map"
+    ],
+    "component---src-pages-writing-js": [
+      "component---src-pages-writing-js-564e3f1c67c7598c6661.js",
+      "component---src-pages-writing-js-564e3f1c67c7598c6661.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-275b7de6318ff27b51b1.js",
+      "app-275b7de6318ff27b51b1.js.map"
+    ],
+    "path---apps": [
+      "path---apps-a0e39f21c11f6a62c5ab.js",
+      "path---apps-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}

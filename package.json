@@ -5,7 +5,7 @@
   "scripts": {
     "heroku-prebuild": "npm install",
     "start": "node app.js",
-    "heroku-postbuild": "npm run build && cd gatsby && npm install && gatsby build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "axios": "^0.18.0",

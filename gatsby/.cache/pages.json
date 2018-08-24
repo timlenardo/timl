@@ -1,0 +1,37 @@
+[
+    {
+        "componentChunkName": "component---src-pages-apps-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "apps.json",
+        "path": "/apps/"
+    },
+    {
+        "componentChunkName": "component---src-pages-contact-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "contact.json",
+        "path": "/contact/"
+    },
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "index.json",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-speaking-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "speaking.json",
+        "path": "/speaking/"
+    },
+    {
+        "componentChunkName": "component---src-pages-writing-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "writing.json",
+        "path": "/writing/"
+    }
+]
