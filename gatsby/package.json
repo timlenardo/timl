@@ -17,6 +17,7 @@
     "bootstrap": "4.1.3",
     "core-js": "^2.5.7",
     "gatsby": "^1.9.277",
+    "gatsby-cli": "^1.1.58",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-postcss-sass": "^1.0.22",
     "gatsby-plugin-react-helmet": "^2.0.11",
