@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "heroku-prebuild": "npm install && npm install --prefix gatsby",
+    "heroku-prebuild": "npm install",
     "start": "node app.js",
-    "heroku-postbuild": "npm run build && cd gatsby && gatsby build && cd .."
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "axios": "^0.18.0",
