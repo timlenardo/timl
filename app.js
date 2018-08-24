@@ -31,16 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var path = require('path');
 
-var prefix = process.env.NODE_ENV == 'dev'  ? '' : '../';
-app.use(express.static(path.resolve(prefix + 'gatsby/public')))
-app.get('/', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-app.get('/apps', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-app.get('/writing', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-app.get('/speaking', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-app.get('/contact', function(req, res) { res.sendfile(path.resolve(prefix + 'gatsby/public/index.html')); });
-
+app.use(express.static('./gatsby/public'))
 app.use('/users', usersRouter);
-
 
 
 // catch 404 and forward to error handler
