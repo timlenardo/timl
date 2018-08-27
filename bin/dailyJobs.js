@@ -50,11 +50,13 @@ naokiinstance.getApps(function(error, data) {
                         category: "total",
                         num_installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, function () {
+                            process.exit(22);
+                        });
                     }).catch(function(error) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, function () {
+                            process.exit(22);
+                        });
                     });
                 }
             }
@@ -96,11 +98,13 @@ personalinstance.getApps(function(error, data) {
                         category: "total",
                         num_installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, new function () {
+                            process.exit(22);
+                        });
                     }).catch(function(error) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, new function () {
+                            process.exit(22);
+                        });
                     });
                 }
             }
@@ -142,11 +146,13 @@ mangoinstance.getApps(function(error, data) {
                         category: "total",
                         num_installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, new function() {
+                            process.exit(22);
+                        });
                     }).catch(function(error) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, new function () {
+                            process.exit(22);
+                        });
                     });
                 }
             }
@@ -188,11 +194,13 @@ rlinstance.getApps(function(error, data) {
                         category: "total",
                         num_installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, new function() {
+                            process.exit(22);
+                        });
                     }).catch(function(error) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null);
-                        process.exit(22);
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, new function() {
+                            process.exit(22);
+                        });
                     });
                 }
             }

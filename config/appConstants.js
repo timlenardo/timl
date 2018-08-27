@@ -3,7 +3,7 @@ let mailgun_api_key = process.env.MAILGUN_API_KEY;
 let domain = 'm.plugco.in';
 let mailgun = require('mailgun-js')({apiKey: mailgun_api_key, domain: domain});
 
-module.exports.sendEmail = (toEmail, subject, message, mailgunAttachment) => {
+module.exports.sendEmail = (toEmail, subject, message, mailgunAttachment, callback) => {
     let emailData = {
         from: "Tim L <tim@jetfuel.it>",
         to: toEmail,
@@ -18,6 +18,7 @@ module.exports.sendEmail = (toEmail, subject, message, mailgunAttachment) => {
         } else {
             console.log("ERROR SENDING EMAIL: " + error);
         }
+        callback();
     });
 }
 
