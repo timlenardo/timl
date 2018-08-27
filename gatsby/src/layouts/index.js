@@ -4,7 +4,19 @@ import Helmet from 'react-helmet';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 
-import axios from 'axios'
+import Favicon57 from '../img/favicon/apple-icon-57x57.png';
+import Favicon60 from '../img/favicon/apple-icon-60x60.png';
+import Favicon72 from '../img/favicon/apple-icon-72x72.png';
+import Favicon76 from '../img/favicon/apple-icon-76x76.png';
+import Favicon114 from '../img/favicon/apple-icon-114x114.png';
+import Favicon120 from '../img/favicon/apple-icon-120x120.png';
+import Favicon144 from '../img/favicon/apple-icon-144x144.png';
+import Favicon152 from '../img/favicon/apple-icon-152x152.png';
+import Favicon180 from '../img/favicon/apple-icon-180x180.png';
+import Favicon192 from '../img/favicon/android-icon-192x192.png';
+import Favicon32 from '../img/favicon/favicon-32x32.png';
+import Favicon96 from '../img/favicon/favicon-96x96.png';
+import Favicon16 from '../img/favicon/favicon-16x16.png';
 
 import '../../sass/style.scss';
 
@@ -48,23 +60,23 @@ class TemplateWrapper extends React.Component {
     return (
       <div key="template-wrapper" className={this.state.navopen ? 'nav-open' : ''}>
         <Helmet>
-          <title>Tim Lenardo</title>
-          <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png"/>
-          <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png"/>
-          <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png"/>
-          <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png"/>
-          <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png"/>
-          <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png"/>
-          <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png"/>
-          <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png"/>
-          <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png"/>
-          <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png"/>
-          <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png"/>
-          <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png"/>
-          <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png"/>
-          <link rel="manifest" href="../img/favicon/manifest.json"/>
+          <title>Tim L</title>
+          <link rel="apple-touch-icon" sizes="57x57" href={Favicon57}/>
+          <link rel="apple-touch-icon" sizes="60x60" href={Favicon60}/>
+          <link rel="apple-touch-icon" sizes="72x72" href={Favicon72}/>
+          <link rel="apple-touch-icon" sizes="76x76" href={Favicon76}/>
+          <link rel="apple-touch-icon" sizes="114x114" href={Favicon114}/>
+          <link rel="apple-touch-icon" sizes="120x120" href={Favicon120}/>
+          <link rel="apple-touch-icon" sizes="144x144" href={Favicon144}/>
+          <link rel="apple-touch-icon" sizes="152x152" href={Favicon152}/>
+          <link rel="apple-touch-icon" sizes="180x180" href={Favicon180}/>
+          <link rel="icon" type="image/png" sizes="192x192"  href={Favicon192}/>
+          <link rel="icon" type="image/png" sizes="32x32" href={Favicon32}/>
+          <link rel="icon" type="image/png" sizes="96x96" href={Favicon96}/>
+          <link rel="icon" type="image/png" sizes="16x16" href={Favicon16}/>
+          <link rel="manifest" href="favicon/manifest.json"/>
           <meta name="msapplication-TileColor" content="#ffffff"/>
-          <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png"/>
+          <meta name="msapplication-TileImage" content={Favicon144}/>
           <meta name="theme-color" content="#ffffff"/>
           <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
         </Helmet>

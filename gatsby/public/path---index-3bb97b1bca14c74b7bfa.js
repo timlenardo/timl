@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{268:function(n,s){n.exports={data:{allInstalls:{edges:[{node:{installs:"2494115",installs_5_min:"2494038"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-3bb97b1bca14c74b7bfa.js.map

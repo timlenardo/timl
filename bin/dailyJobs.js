@@ -12,6 +12,10 @@ var numberOfUsers = 4;
 var totalAndroid = 1000000;
 var totalBoomerang = 123000000;
 
+var dateToString = d => `${d.getFullYear()}-${('00' + (d.getMonth() + 1)).slice(-2)}-${('00' + d.getDate()).slice(-2)}`
+var todayString = dateToString(new Date(Date.now()))
+console.log("Today string! " + todayString);
+
 // Naoki
 var username = process.env.NAOKI_DATA_USERNAME;
 var password = process.env.NAOKI_DATA_PASSWORD;
@@ -25,11 +29,12 @@ var naokiinstance = new Itunes(username, password, {
 });
 naokiinstance.getApps(function(error, data) {
     var numNaokiApps = data['results'].length;
+
     data['results'].forEach(function (appData) {
         var query = AnalyticsQuery.metrics(appData['adamId'], {
             measures:  itc.measures.units,
             frequency: 'MONTH',
-        }).date('2014-10-01','2018-08-20');
+        }).date('2014-10-01', todayString);
         naokiinstance.request(query, function(error, result) {
             console.log(result['results'][0]['totals']['value']);
             totalUnits = totalUnits + parseInt(result['results'][0]['totals']['value']);
@@ -73,7 +78,7 @@ personalinstance.getApps(function(error, data) {
         var query = AnalyticsQuery.metrics(appData['adamId'], {
             measures:  itc.measures.units,
             frequency: 'MONTH',
-        }).date('2014-10-01','2018-08-20');
+        }).date('2014-10-01',todayString;
         personalinstance.request(query, function(error, result) {
             console.log(result['results'][0]['totals']['value']);
             totalUnits = totalUnits + parseInt(result['results'][0]['totals']['value']);
@@ -117,7 +122,7 @@ mangoinstance.getApps(function(error, data) {
         var query = AnalyticsQuery.metrics(appData['adamId'], {
             measures:  itc.measures.units,
             frequency: 'MONTH',
-        }).date('2014-10-01','2018-08-20');
+        }).date('2014-10-01', todayString);
         mangoinstance.request(query, function(error, result) {
             console.log(result['results'][0]['totals']['value']);
             totalUnits = totalUnits + parseInt(result['results'][0]['totals']['value']);
@@ -161,7 +166,7 @@ rlinstance.getApps(function(error, data) {
         var query = AnalyticsQuery.metrics(appData['adamId'], {
             measures:  itc.measures.units,
             frequency: 'MONTH',
-        }).date('2014-10-01','2018-08-20');
+        }).date('2014-10-01',todayString);
         rlinstance.request(query, function(error, result) {
             console.log(result['results'][0]['totals']['value']);
             totalUnits = totalUnits + parseInt(result['results'][0]['totals']['value']);

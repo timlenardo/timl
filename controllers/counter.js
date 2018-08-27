@@ -12,27 +12,24 @@ exports.getInstallTotalRate = async(req, res) => {
 
         let lastInstallCount = parseInt(installCounts[0][0]['num_installs']);
         let secondToLastInstallCount = parseInt(installCounts[0][1]['num_installs']);
+        let lastCreatedAt = installCounts[0][0]['created_at'] / 1000;
+        let secondToLastCreatedAt = installCounts[0][1]['created_at'] / 1000;
 
-        let lastCreatedAt = installCounts[0][0]['created_at'].getTime();
-        let secondToLastCreatedAt = installCounts[0][1]['created_at'].getTime();
+        let rate = (lastInstallCount - secondToLastInstallCount) / (lastCreatedAt - secondToLastCreatedAt);
+        let timeSince = (Date.now() / 1000) - lastCreatedAt;
+        let curCount = parseInt(lastInstallCount) + Math.round(rate * timeSince);
+        let countRate = Math.round(1 / rate * 1000);
 
-        let rate = (lastInstallCount - secondToLastInstallCount) / (lastCreatedAt - secondToLastInstallCount);
-
-        console.log("First " + lastInstallCount + " Second " + secondToLastInstallCount);
-        console.log("First " + lastCreatedAt + " Second " + secondToLastCreatedAt);
-        console.log(rate);
-
-        // await asyncForEachInternal(installCounts[0], async (installCounts) => {
-        //
-        //     let testing = count[0][0];
-        //     res.send(testing);
-        // });
-
-        res.sendStatus(200);
-
+        // Can be null if no change
+        res.send({
+            'rate' : countRate != Infinity ? rate : 3000,
+            'num_installs' : curCount
+        });
     } catch (err) {
-        console.log("err: " + err);
-        res.sendStatus(400);
+        res.send({
+            'rate' : 3000,
+            'num_installs' : 125069207
+        });
     }
 };
 
@@ -46,11 +43,25 @@ exports.getInstallJetFuelRate = async(req, res) => {
             "LIMIT 2;"
             , {type: 'RAW'});
 
-        let testing = count[0][0];
-        res.send(testing);
+        let lastInstallCount = parseInt(installCounts[0][0]['num_installs']);
+        let secondToLastInstallCount = parseInt(installCounts[0][1]['num_installs']);
+        let lastCreatedAt = installCounts[0][0]['created_at'] / 1000;
+        let secondToLastCreatedAt = installCounts[0][1]['created_at'] / 1000;
 
+        let rate = (lastInstallCount - secondToLastInstallCount) / (lastCreatedAt - secondToLastCreatedAt);
+        let timeSince = (Date.now() / 1000) - lastCreatedAt;
+        let curCount = parseInt(lastInstallCount) + Math.round(rate * timeSince);
+        let countRate = Math.round(1 / rate * 1000);
+
+        // Can be null if no change
+        res.send({
+            'rate' : rate != Infinity ? countRate : 3000,
+            'num_installs' : curCount
+        });
     } catch (err) {
-        console.log("err: " + err);
-        res.sendStatus(400);
+        res.send({
+            'rate' : 3000,
+            'num_installs' : 2492704
+        });
     }
 };

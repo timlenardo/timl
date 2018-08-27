@@ -35,11 +35,9 @@ const public = path.join(__dirname, 'gatsby', 'public');
 
 
 app.use(express.static(public))
-app.use('/users', usersRouter);
 
-// counterController.getInstallTotalRate();
-
-// app.get('/')
+app.get('/jetfuel_install_rate', counterController.getInstallJetFuelRate);
+app.get('/total_install_rate', counterController.getInstallTotalRate);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
