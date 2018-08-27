@@ -98,11 +98,11 @@ personalinstance.getApps(function(error, data) {
                         category: "total",
                         num_installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, new function () {
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, function () {
                             process.exit(22);
                         });
                     }).catch(function(error) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, new function () {
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, function () {
                             process.exit(22);
                         });
                     });
@@ -146,11 +146,11 @@ mangoinstance.getApps(function(error, data) {
                         category: "total",
                         num_installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, new function() {
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, function() {
                             process.exit(22);
                         });
                     }).catch(function(error) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, new function () {
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, function () {
                             process.exit(22);
                         });
                     });
@@ -194,11 +194,11 @@ rlinstance.getApps(function(error, data) {
                         category: "total",
                         num_installs: parseInt(totalInstalls)
                     }).then(function(installCount) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, new function() {
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs added", "Success: " + totalInstalls, null, function() {
                             process.exit(22);
                         });
                     }).catch(function(error) {
-                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, new function() {
+                        appConstants.sendEmail('tim@jetfuel.it', "Installs failed", "error: " + error, null, function() {
                             process.exit(22);
                         });
                     });
@@ -216,17 +216,17 @@ axios.get('https://www.plugco.in/installs')
             category: "jetfuel",
             num_installs: parseInt(count)
         }).then(function(installCount) {
-            appConstants.sendEmail('tim@jetfuel.it', "JetFuel Installs added", "Success: " + count, null, new function() {
+            appConstants.sendEmail('tim@jetfuel.it', "JetFuel Installs added", "Success: " + count, null, function() {
                 // nothing
             });
         }).catch(function(error) {
-            appConstants.sendEmail('tim@jetfuel.it', "Getting JetFuel Installs failed", "error: " + error, null, new function () {
+            appConstants.sendEmail('tim@jetfuel.it', "Getting JetFuel Installs failed", "error: " + error, null, function () {
                 // nothing
             });
         });
     })
     .catch(error => {
-        appConstants.sendEmail('tim@jetfuel.it', "Getting JetFuel installs failed", "error: " + error, null, new function () {
+        appConstants.sendEmail('tim@jetfuel.it', "Getting JetFuel installs failed", "error: " + error, null, function () {
             // nothing
         });
     });

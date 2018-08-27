@@ -12,13 +12,14 @@ module.exports.sendEmail = (toEmail, subject, message, mailgunAttachment, callba
         attachment: mailgunAttachment
     };
 
+    var globalCallback = callback;
     mailgun.messages().send(emailData, function (error, body) {
         if(!error) {
             console.log("SENT EMAIL: " + body);
         } else {
             console.log("ERROR SENDING EMAIL: " + error);
         }
-        callback();
+        globalCallback();
     });
 }
 
