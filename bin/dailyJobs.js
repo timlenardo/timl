@@ -78,7 +78,7 @@ personalinstance.getApps(function(error, data) {
         var query = AnalyticsQuery.metrics(appData['adamId'], {
             measures:  itc.measures.units,
             frequency: 'MONTH',
-        }).date('2014-10-01',todayString;
+        }).date('2014-10-01', todayString);
         personalinstance.request(query, function(error, result) {
             console.log(result['results'][0]['totals']['value']);
             totalUnits = totalUnits + parseInt(result['results'][0]['totals']['value']);
@@ -166,7 +166,7 @@ rlinstance.getApps(function(error, data) {
         var query = AnalyticsQuery.metrics(appData['adamId'], {
             measures:  itc.measures.units,
             frequency: 'MONTH',
-        }).date('2014-10-01',todayString);
+        }).date('2014-10-01', todayString);
         rlinstance.request(query, function(error, result) {
             console.log(result['results'][0]['totals']['value']);
             totalUnits = totalUnits + parseInt(result['results'][0]['totals']['value']);
