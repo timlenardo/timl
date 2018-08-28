@@ -101,6 +101,7 @@ if (!global.hasOwnProperty('db')) {
         Sequelize: Sequelize,
         sequelize: sequelize,
         InstallCount:      sequelize.import(__dirname + '/installCount'),
+        Email: sequelize.import(__dirname + '/email'),
     };
 
     global.db.Op = Sequelize.Op;

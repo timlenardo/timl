@@ -26,5 +26,17 @@
       "num_installs": 134001000,
       "category": "jetfuel"
     }
+  },
+  {
+    "model": "Email",
+    "data": {
+      "email": "tim@jetfuel.it"
+    }
+  },
+  {
+    "model": "Email",
+    "data": {
+      "email": "tim@reallabs.io"
+    }
   }
 ]

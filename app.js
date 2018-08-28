@@ -16,6 +16,7 @@ const models = require('./models');
 const appConstants = require("./config/appConstants");
 const axios = require('axios');
 const counterController = require('./controllers/counter');
+const apiController = require('./controllers/api');
 
 var app = express();
 
@@ -38,6 +39,7 @@ app.use(express.static(public))
 
 app.get('/jetfuel_install_rate', counterController.getInstallJetFuelRate);
 app.get('/total_install_rate', counterController.getInstallTotalRate);
+app.get('/add_email', apiController.insertEmail);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

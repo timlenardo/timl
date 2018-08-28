@@ -6,10 +6,14 @@ import Hero from '../components/hero';
 
 // AppCards
 import AppCard from '../components/appcard';
-import Vivify from '../img/thumbnails/Vivify.png';
-import VivifyIcon from '../components/icon/Vivify.icon';
-import Boomerang from '../img/thumbnails/Boomerang.png';
-import BoomerangIcon from '../components/icon/Boomerang.icon';
+import ThePlug from '../img/thumbnails/ThePlug.png';
+import ThePlugIcon from '../components/icon/ThePlug.icon';
+import ThePlugCover from '../img/covers/plug.png';
+import ThePlugGif from '../img/gifs/plug.gif';
+import JetFuel from '../img/thumbnails/JetFuel.png';
+import JetFuelIcon from '../components/icon/JetFuel.icon';
+import JetFuelCover from '../img/covers/jetfuel.png';
+import JetFuelGif from '../img/gifs/jetfuel.gif';
 
 const downloadTimes = 1820934;
 
@@ -20,9 +24,6 @@ class IndexPage extends React.Component {
     }
 
     componentDidMount() {
-
-        // value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
         fetch('/total_install_rate')
             .then(response => response.json())
             .then(function(response) {
@@ -102,27 +103,32 @@ class IndexPage extends React.Component {
                     A few months ago we started <a href="https://www.jetfuel.it">JetFuel</a>, an influencer driven app
                     promotion service. To date,
                     we’ve delivered <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs to some of the top
-                    companies in mobile, like <a href="www.voodoo.io">Voodoo</a>, <a href="www.mammoth.la">Mammoth</a>,
-                    and <a href="www.tastypill.com">Tastypill</a>.
+                    companies in mobile, like <a href="http://www.voodoo.io">Voodoo</a>, <a href="http://www.mammoth.la">Mammoth</a>,
+                    and <a href="http://www.tastypill.com">Tastypill</a>.
                 </p>
 
                 {/*<h2>More Works</h2>*/}
 
-                {/*<div className="appcards">*/}
-                    {/*<AppCard*/}
-                        {/*image={Vivify}*/}
-                        {/*icon={VivifyIcon}*/}
-                        {/*title="Vivify"*/}
-                        {/*subtitle="Bring your photos to life"*/}
-                    {/*/>*/}
-                    {/*<AppCard*/}
-                        {/*image={Boomerang}*/}
-                        {/*icon={BoomerangIcon}*/}
-                        {/*title="Boomerang"*/}
-                        {/*subtitle="Fun looping videos"*/}
-                        {/*className="d-none d-md-flex"*/}
-                    {/*/>*/}
-                {/*</div>*/}
+                <div className="appcards">
+                    <AppCard
+                        image={JetFuel}
+                        icon={JetFuelIcon}
+                        cover={JetFuelCover}
+                        gif={JetFuelGif}
+                        title="JetFuel.it"
+                        subtitle="Blazing fast app installs"
+                        isPhone={false}
+                    />
+                    <AppCard
+                        image={ThePlug}
+                        icon={ThePlugIcon}
+                        cover={ThePlugCover}
+                        gif={ThePlugGif}
+                        title="The Plug"
+                        subtitle="Monetize your following"
+                        isPhone={true}
+                    />
+                </div>
 
                 <p>
                     <Link to="/apps">View All Work</Link>

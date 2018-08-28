@@ -5,6 +5,10 @@ module.exports = {
   siteMetadata: {
     title: `Tim Lenardo`,
   },
+  proxy: {
+    prefix: "/",
+    url: "http://localhost:3000",
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `svgo`,

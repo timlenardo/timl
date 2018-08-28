@@ -4,7 +4,7 @@ import Icon from '../icon';
 import Email from '../email';
 import './_footer.scss';
 
-const twitterUser = '';
+const twitterUser = 'telenardo';
 const instagramUser = 'tim.lenardo';
 
 const Footer = ({ className }) => (
