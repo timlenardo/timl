@@ -5,31 +5,21 @@
       "parent": "__SOURCE__",
       "internal": {
         "type": "Installs",
-        "contentDigest": "ddb00b299df7e788b0f1355165ab2ee4",
+        "contentDigest": "1b8af9262c25f88065158612cc4b5d89",
         "owner": "default-site-plugin"
       },
       "children": [],
-      "installs": "2550150",
-      "installs_5_min": "2550122"
+      "installs": "2550226",
+      "installs_5_min": "2550203"
     },
     "SitePage /dev-404-page/": {
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/tim/Documents/Personal/timl/gatsby/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/tim/Documents/Personal/timl/gatsby/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3aee05bc3c7e60c4c91aad6f620a2b7a",
-        "description": "Plugin dev-404-page",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -600,20 +590,18 @@
       "siteMetadata": {
         "title": "Tim Lenardo"
       },
-      "port": "8000",
-      "host": "localhost",
       "proxy": {
         "prefix": "/",
         "url": "http://localhost:3000"
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-08-28T05:18:13.840Z",
+      "buildTime": "2018-08-28T05:32:23.570Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "34d636a6c67286fb714c18e6f7019cdf",
+        "contentDigest": "7a3442eef3a0b886c589902d4ff968e1",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -634,7 +622,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d715440d3fb32d00936c72184aa10591",
+        "contentDigest": "1b6f05c7e71bbc828d7bec10b83ab70d",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -655,7 +643,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d4f4ec0ac7a0b30f844f28faad016855",
+        "contentDigest": "42c8682894485d707cbf3412ccb95e33",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -676,7 +664,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9a9e30e40e38b40ec83665dac1686e8a",
+        "contentDigest": "eef1b75583c34453ee3e4303b9bbff30",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -697,7 +685,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d82db26eb7de57259a93573d565c2fb2",
+        "contentDigest": "3e00b206ae69c4ef63310e44f5c09859",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -718,7 +706,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "373b21f2ddbeafbaf09a95acc5bcb7db",
+        "contentDigest": "662bd154f41a2c3dc84f8b4792a184a5",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
