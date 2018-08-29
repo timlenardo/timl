@@ -22,7 +22,7 @@ exports.getInstallTotalRate = async(req, res) => {
 
         // Can be null if no change
         res.send({
-            'rate' : countRate != Infinity ? rate : 3000,
+            'rate' : rate != Infinity ? countRate : 3000,
             'num_installs' : curCount
         });
     } catch (err) {
