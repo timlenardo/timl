@@ -32,7 +32,7 @@ class AppCard extends React.Component {
 
     render() {
         return (
-            <div className={'AppCard ' + (this.props.className || '')} onMouseEnter={this.hoverOn} onMouseLeave={this.hoverOff} onClick={this.onClick}>
+            <div id={this.props.id} className={'AppCard ' + (this.props.className || '')} onMouseEnter={this.hoverOn} onMouseLeave={this.hoverOff} onClick={this.onClick}>
                 <img className={this.props.isPhone ? "fill" : "fillDesktop"} src={this.props.cover}/>
                 <img className={this.props.isPhone ? "fill" : "fillDesktop"} style={this.state.hovering ? visible : hidden} src={this.state.hovering ? this.props.gif : null}/>
                 {this.props.isPhone ? <img className="background" src={this.state.hovering ? PhoneFrameSelected : PhoneFrame}/> : null}

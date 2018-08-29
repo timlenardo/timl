@@ -102,6 +102,7 @@ class AppsPage extends React.Component {
         </p>
         <div className="appcards">
           <AppCard
+            id="Jetfuel"
             image={JetFuel}
             icon={JetFuelIcon}
             cover={JetFuelCover}
@@ -112,6 +113,7 @@ class AppsPage extends React.Component {
             isPhone={false}
           />
           <AppCard
+            id="ThePlug"
             image={ThePlug}
             icon={ThePlugIcon}
             cover={ThePlugCover}
@@ -122,6 +124,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
           <AppCard
+            id="Vivify"
             image={Vivify}
             icon={VivifyIcon}
             cover={VivifyCover}
@@ -132,6 +135,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
           <AppCard
+            id="kthx"
             image={Kthx}
             icon={KthxIcon}
             cover={KthxCover}
@@ -141,6 +145,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
           <AppCard
+            id="CaptionPro"
             image={CaptionPro}
             icon={CaptionProIcon}
             cover={CaptionProCover}
@@ -151,6 +156,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
           <AppCard
+            id="Devilish"
             image={Devilish}
             icon={DevilishIcon}
             cover={DevilishCover}
@@ -160,6 +166,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
           <AppCard
+            id="Mango"
             image={Mango}
             icon={MangoIcon}
             cover={MangoCover}
@@ -169,6 +176,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
           <AppCard
+            id="Snapball"
             image={Snapball}
             icon={SnapballIcon}
             cover={SnapballCover}
@@ -178,6 +186,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
           <AppCard
+            id="ChattyAf"
             image={ChattyAf}
             icon={ChattyAfIcon}
             cover={ChattyCover}

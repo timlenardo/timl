@@ -115,6 +115,7 @@ class IndexPage extends React.Component {
                         icon={JetFuelIcon}
                         cover={JetFuelCover}
                         gif={JetFuelGif}
+                        redirectUrl={"https://www.jetfuel.it"}
                         title="JetFuel.it"
                         subtitle="Blazing fast app installs"
                         isPhone={false}
@@ -124,6 +125,7 @@ class IndexPage extends React.Component {
                         icon={ThePlugIcon}
                         cover={ThePlugCover}
                         gif={ThePlugGif}
+                        redirectUrl={"https://itunes.apple.com/us/app/the-plug-analytics/id1359311600?ls=1&mt=8"}
                         title="The Plug"
                         subtitle="Monetize your following"
                         isPhone={true}
