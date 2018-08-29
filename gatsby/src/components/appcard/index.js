@@ -24,9 +24,15 @@ class AppCard extends React.Component {
 
     hoverOff = () => this.setState(state => ({ hovering: false }));
 
+    onClick = () => {
+        if (this.props.redirectUrl != null) {
+            window.location.replace(this.props.redirectUrl);
+        }
+    }
+
     render() {
         return (
-            <div className={'AppCard ' + (this.props.className || '')} onMouseEnter={this.hoverOn} onMouseLeave={this.hoverOff}>
+            <div className={'AppCard ' + (this.props.className || '')} onMouseEnter={this.hoverOn} onMouseLeave={this.hoverOff} onClick={this.onClick}>
                 <img className={this.props.isPhone ? "fill" : "fillDesktop"} src={this.props.cover}/>
                 <img className={this.props.isPhone ? "fill" : "fillDesktop"} style={this.state.hovering ? visible : hidden} src={this.state.hovering ? this.props.gif : null}/>
                 {this.props.isPhone ? <img className="background" src={this.state.hovering ? PhoneFrameSelected : PhoneFrame}/> : null}
@@ -39,6 +45,7 @@ class AppCard extends React.Component {
                     </div>
                 </div>
             </div>
+
         );
     }
 }

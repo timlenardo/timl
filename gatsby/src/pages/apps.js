@@ -106,6 +106,7 @@ class AppsPage extends React.Component {
             icon={JetFuelIcon}
             cover={JetFuelCover}
             gif={JetFuelGif}
+            redirectUrl={"https://www.jetfuel.it"}
             title="JetFuel.it"
             subtitle="Blazing fast app installs"
             isPhone={false}
@@ -115,6 +116,7 @@ class AppsPage extends React.Component {
             icon={ThePlugIcon}
             cover={ThePlugCover}
             gif={ThePlugGif}
+            redirectUrl={"https://itunes.apple.com/us/app/the-plug-analytics/id1359311600?ls=1&mt=8"}
             title="The Plug"
             subtitle="Monetize your following"
             isPhone={true}
@@ -124,6 +126,7 @@ class AppsPage extends React.Component {
             icon={VivifyIcon}
             cover={VivifyCover}
             gif={VivifyGif}
+            redirectUrl={"http://www.vivify.me"}
             title="Vivify"
             subtitle="Bring life to your photos"
             isPhone={true}
@@ -142,6 +145,7 @@ class AppsPage extends React.Component {
             icon={CaptionProIcon}
             cover={CaptionProCover}
             gif={CaptionProGif}
+            redirectUrl={"https://itunes.apple.com/app/id1332954872"}
             title="Caption Pro"
             subtitle="Step up your caption game"
             isPhone={true}
@@ -194,6 +198,7 @@ class AppsPage extends React.Component {
               icon={ColorMemeIcon}
               cover={ColorMemeCover}
               gif={ColorMemeGif}
+              redirectUrl={"https://itunes.apple.com/app/id1416407100"}
               title="Color Meme"
               subtitle="Pixel color your favorite memes"
               isPhone={true}
@@ -204,6 +209,7 @@ class AppsPage extends React.Component {
               icon={BallGatesIcon}
               cover={BallGatesCover}
               gif={BallGatesGif}
+              redirectUrl={"https://itunes.apple.com/app/id1384813516"}
               title="Ball Gates"
               subtitle="Like Bill Gates, but it's a game"
               isPhone={true}
@@ -214,6 +220,7 @@ class AppsPage extends React.Component {
               icon={BombDodgerIcon}
               cover={BombDodgerCover}
               gif={BombDodgerGif}
+              redirectUrl={"https://itunes.apple.com/app/id1375899524"}
               title="BombDodger"
               subtitle="How long can you survive?"
               isPhone={true}
@@ -224,6 +231,7 @@ class AppsPage extends React.Component {
               icon={BallzDropIcon}
               gif={BallzDropGif}
               cover={BallzDropCover}
+              redirectUrl={"https://itunes.apple.com/app/id1406698412"}
               title="Ballz Drop"
               subtitle="How many layers can you pass?"
               isPhone={true}
@@ -234,6 +242,7 @@ class AppsPage extends React.Component {
               icon={Spiral3DIcon}
               gif={Spiral3DGif}
               cover={Spiral3DCover}
+              redirectUrl={"https://play.google.com/store/apps/details?id=com.naokikomoto.spiral"}
               title="Spiral 3D"
               subtitle="How many layers can you pass?"
               isPhone={true}
@@ -251,6 +260,7 @@ class AppsPage extends React.Component {
             icon={BoomerangIcon}
             gif={BoomerangGif}
             cover={BoomerangCover}
+            redirectUrl={"https://itunes.apple.com/us/app/boomerang-from-instagram/id1041596399?mt=8"}
             title="Boomerang"
             subtitle="Fun looping videos"
             isPhone={true}
@@ -261,6 +271,7 @@ class AppsPage extends React.Component {
             icon={InstagramIcon}
             gif={FilterGif}
             cover={FilterCover}
+            redirectUrl={"https://www.instagram.com/p/1_SgtKjZBJ/"}
             title="Filters, Clarendon to Perpetua"
             subtitle="Instagram's 11 most recent filters"
             isPhone={true}
@@ -271,6 +282,7 @@ class AppsPage extends React.Component {
             icon={InstagramIcon}
             gif={FadeAndColorGif}
             cover={FadeAndColorCover}
+            redirectUrl={"https://www.facebook.com/502917359/posts/10153233804082360/?__tn__=-R"}
             title="Fade & Color"
             subtitle="Pro adjustment tools"
             isPhone={true}
