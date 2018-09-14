@@ -1,8 +1,10 @@
+import AdSense from 'react-adsense';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+
 
 import Favicon57 from '../img/favicon/apple-icon-57x57.png';
 import Favicon60 from '../img/favicon/apple-icon-60x60.png';
@@ -27,26 +29,11 @@ class TemplateWrapper extends React.Component {
   };
 
   componentDidMount() {
-    // var itc = require('itunesconnectanalytics');
-    // var Itunes = itc.Itunes;
-    // var AnalyticsQuery = itc.AnalyticsQuery;
-    //
-    // var username = 'UNAME';
-    // var password = 'PASS';
-    // var appId = '12345'; //Found in My Apps -> App -> Apple ID or read below on getting the app id.
-    //
-    // var instance = new Itunes(username, password, {
-    //     errorCallback: function(e) {
-    //         console.log('Error logging in: ' + e);
-    //     },
-    //     successCallback: function(d) {
-    //         console.log('Logged in');
-    //     }
-    // });
-    //
-    // instance.getApps(function(error, data) {
-    //     console.log(JSON.stringify(data, null, 2));
-    // });
+    // Adsense stuff
+    (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3757931526099106",
+          enable_page_level_ads: true
+     });
   }
 
   handleToggle = () => {
@@ -79,6 +66,7 @@ class TemplateWrapper extends React.Component {
           <meta name="msapplication-TileImage" content={Favicon144}/>
           <meta name="theme-color" content="#ffffff"/>
           <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Helmet>
         <div className="row no-gutters pre-footer">
           <Nav
