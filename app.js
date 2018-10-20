@@ -41,6 +41,11 @@ app.get('/jetfuel_install_rate', counterController.getInstallJetFuelRate);
 app.get('/total_install_rate', counterController.getInstallTotalRate);
 app.get('/add_email', apiController.insertEmail);
 
+app.get("/insta", function(req, res){
+    req.url = "http://192.241.226.203";
+    app.handle(req, res);
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
