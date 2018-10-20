@@ -40,10 +40,8 @@ app.use(express.static(public))
 app.get('/jetfuel_install_rate', counterController.getInstallJetFuelRate);
 app.get('/total_install_rate', counterController.getInstallTotalRate);
 app.get('/add_email', apiController.insertEmail);
-
 app.get("/insta", function(req, res){
-    req.url = "http://192.241.226.203";
-    app.handle(req, res);
+    res.redirect('http://192.241.226.203');
 });
 
 // catch 404 and forward to error handler
