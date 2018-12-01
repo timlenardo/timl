@@ -11,6 +11,14 @@ var totalUnits = 0;
 var numberOfUsers = 4;
 var totalAndroid = 1000000;
 var totalBoomerang = 123000000;
+var boomerangAverageDailyInstalls = 96667;
+
+var now = new Date();
+var daysSinceEpoch = Math.floor(now/8.64e7);
+var daysDiff = daysSinceEpoch - 17863;
+var boomerangInstallsSinceStart = boomerangAverageDailyInstalls * daysDiff;
+totalBoomerang = totalBoomerang + boomerangInstallsSinceStart;
+
 
 var dateToString = d => `${d.getFullYear()}-${('00' + (d.getMonth() + 1)).slice(-2)}-${('00' + d.getDate()).slice(-2)}`
 var todayString = dateToString(new Date(Date.now()))
