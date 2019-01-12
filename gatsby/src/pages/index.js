@@ -103,7 +103,7 @@ class IndexPage extends React.Component {
                     A few months ago we started <a href="https://www.jetfuel.it">JetFuel</a>, an influencer driven app
                     promotion service. To date,
                     we’ve delivered <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs to some of the top
-                    companies in mobile, like <a href="http://www.voodoo.io">Voodoo</a>, <a href="http://www.mammoth.la">Mammoth</a>,
+                    companies in mobile, like <a href="http://www.calm.com">Calm</a>, <a href="http://www.mammoth.la">Mammoth</a>,
                     and <a href="http://www.tastypill.com">Tastypill</a>.
                 </p>
 
