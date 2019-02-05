@@ -117,7 +117,8 @@ class AppsPage extends React.Component {
             image={ThePlug}
             icon={ThePlugIcon}
             cover={ThePlugCover}
-            gif={ThePlugGif}
+            gif={ThePlugCover}
+            // gif={ThePlugGif}
             redirectUrl={"https://itunes.apple.com/us/app/the-plug-analytics/id1359311600?ls=1&mt=8"}
             title="The Plug"
             subtitle="Monetize your following"
@@ -175,16 +176,16 @@ class AppsPage extends React.Component {
             subtitle="Juicy anonymous polls"
             isPhone={true}
           />
-          <AppCard
-            id="Snapball"
-            image={Snapball}
-            icon={SnapballIcon}
-            cover={SnapballCover}
-            gif={SnapballGif}
-            title="Snapball"
-            subtitle="Challenge friends on Snap"
-            isPhone={true}
-          />
+          {/*<AppCard*/}
+            {/*id="Snapball"*/}
+            {/*image={Snapball}*/}
+            {/*icon={SnapballIcon}*/}
+            {/*cover={SnapballCover}*/}clae
+            {/*gif={SnapballGif}*/}
+            {/*title="Snapball"*/}
+            {/*subtitle="Challenge friends on Snap"*/}
+            {/*isPhone={true}*/}
+          {/*/>*/}
           <AppCard
             id="ChattyAf"
             image={ChattyAf}
@@ -196,7 +197,7 @@ class AppsPage extends React.Component {
             isPhone={true}
           />
         </div>
-        <h2 id="JetFuelGames">JetFuel Games</h2>
+        {/*<h2 id="JetFuelGames">JetFuel Games</h2>*/}
         {/*<p>*/}
           {/*After launching our app promotion service, JetFuel, we developed a series of casual games to bootstrap the inventory of apps.*/}
         {/*</p>*/}
