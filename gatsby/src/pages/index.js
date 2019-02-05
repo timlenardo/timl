@@ -104,7 +104,7 @@ class IndexPage extends React.Component {
                     promotion service. To date,
                     we’ve delivered <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs to some of the top
                     companies in mobile, like <a href="http://www.calm.com">Calm</a>, <a href="http://www.mammoth.la">Mammoth</a>,
-                    and <a href="http://www.tastypill.com">Tastypill</a>.
+                    and <a href="http://www.anchorfree.com">AnchorFree</a>.
                 </p>
 
                 {/*<h2>More Works</h2>*/}

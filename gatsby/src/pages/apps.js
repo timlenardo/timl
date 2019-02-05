@@ -197,66 +197,66 @@ class AppsPage extends React.Component {
           />
         </div>
         <h2 id="JetFuelGames">JetFuel Games</h2>
-        <p>
-          After launching our app promotion service, JetFuel, we developed a series of casual games to bootstrap the inventory of apps.
-        </p>
-        <div className="appcards">
-          <AppCard
-              id="ColorMeme"
-              image={ColorMeme}
-              icon={ColorMemeIcon}
-              cover={ColorMemeCover}
-              gif={ColorMemeGif}
-              redirectUrl={"https://itunes.apple.com/app/id1416407100"}
-              title="Color Meme"
-              subtitle="Pixel color your favorite memes"
-              isPhone={true}
-          />
-          <AppCard
-              id="BallGates"
-              image={BallGates}
-              icon={BallGatesIcon}
-              cover={BallGatesCover}
-              gif={BallGatesGif}
-              redirectUrl={"https://itunes.apple.com/app/id1384813516"}
-              title="Ball Gates"
-              subtitle="Like Bill Gates, but it's a game"
-              isPhone={true}
-          />
-          <AppCard
-              id="BombDodger"
-              image={BombDodger}
-              icon={BombDodgerIcon}
-              cover={BombDodgerCover}
-              gif={BombDodgerGif}
-              redirectUrl={"https://itunes.apple.com/app/id1375899524"}
-              title="BombDodger"
-              subtitle="How long can you survive?"
-              isPhone={true}
-          />
-          <AppCard
-              id="BallzDrop"
-              image={BallzDrop}
-              icon={BallzDropIcon}
-              gif={BallzDropGif}
-              cover={BallzDropCover}
-              redirectUrl={"https://itunes.apple.com/app/id1406698412"}
-              title="Ballz Drop"
-              subtitle="How many layers can you pass?"
-              isPhone={true}
-          />
-          <AppCard
-              id="Spiral3D"
-              image={Spiral3D}
-              icon={Spiral3DIcon}
-              gif={Spiral3DGif}
-              cover={Spiral3DCover}
-              redirectUrl={"https://play.google.com/store/apps/details?id=com.naokikomoto.spiral"}
-              title="Spiral 3D"
-              subtitle="How many layers can you pass?"
-              isPhone={true}
-          />
-        </div>
+        {/*<p>*/}
+          {/*After launching our app promotion service, JetFuel, we developed a series of casual games to bootstrap the inventory of apps.*/}
+        {/*</p>*/}
+        {/*<div className="appcards">*/}
+          {/*<AppCard*/}
+              {/*id="ColorMeme"*/}
+              {/*image={ColorMeme}*/}
+              {/*icon={ColorMemeIcon}*/}
+              {/*cover={ColorMemeCover}*/}
+              {/*gif={ColorMemeGif}*/}
+              {/*redirectUrl={"https://itunes.apple.com/app/id1416407100"}*/}
+              {/*title="Color Meme"*/}
+              {/*subtitle="Pixel color your favorite memes"*/}
+              {/*isPhone={true}*/}
+          {/*/>*/}
+          {/*<AppCard*/}
+              {/*id="BallGates"*/}
+              {/*image={BallGates}*/}
+              {/*icon={BallGatesIcon}*/}
+              {/*cover={BallGatesCover}*/}
+              {/*gif={BallGatesGif}*/}
+              {/*redirectUrl={"https://itunes.apple.com/app/id1384813516"}*/}
+              {/*title="Ball Gates"*/}
+              {/*subtitle="Like Bill Gates, but it's a game"*/}
+              {/*isPhone={true}*/}
+          {/*/>*/}
+          {/*<AppCard*/}
+              {/*id="BombDodger"*/}
+              {/*image={BombDodger}*/}
+              {/*icon={BombDodgerIcon}*/}
+              {/*cover={BombDodgerCover}*/}
+              {/*gif={BombDodgerGif}*/}
+              {/*redirectUrl={"https://itunes.apple.com/app/id1375899524"}*/}
+              {/*title="BombDodger"*/}
+              {/*subtitle="How long can you survive?"*/}
+              {/*isPhone={true}*/}
+          {/*/>*/}
+          {/*<AppCard*/}
+              {/*id="BallzDrop"*/}
+              {/*image={BallzDrop}*/}
+              {/*icon={BallzDropIcon}*/}
+              {/*gif={BallzDropGif}*/}
+              {/*cover={BallzDropCover}*/}
+              {/*redirectUrl={"https://itunes.apple.com/app/id1406698412"}*/}
+              {/*title="Ballz Drop"*/}
+              {/*subtitle="How many layers can you pass?"*/}
+              {/*isPhone={true}*/}
+          {/*/>*/}
+          {/*<AppCard*/}
+              {/*id="Spiral3D"*/}
+              {/*image={Spiral3D}*/}
+              {/*icon={Spiral3DIcon}*/}
+              {/*gif={Spiral3DGif}*/}
+              {/*cover={Spiral3DCover}*/}
+              {/*redirectUrl={"https://play.google.com/store/apps/details?id=com.naokikomoto.spiral"}*/}
+              {/*title="Spiral 3D"*/}
+              {/*subtitle="How many layers can you pass?"*/}
+              {/*isPhone={true}*/}
+          {/*/>*/}
+        {/*</div>*/}
         <h2 id="Instagram">Instagram</h2>
         <p>
           I had a chance to build some really cool things during my time at Instagram. Here's
