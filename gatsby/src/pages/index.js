@@ -43,24 +43,24 @@ class IndexPage extends React.Component {
                 );
             }.bind(this));
 
-        fetch('/jetfuel_install_rate')
-            .then(response => response.json())
-            .then(function(response) {
-                let jetfuel_count = response['num_installs'];
-                let rate = parseInt(response['rate']);
-                console.log("Jetfuel Count: " + jetfuel_count);
-                console.log("Total Rate: " + rate);
-                this.setState({jetfuel_count: jetfuel_count});
-                setInterval(
-                    function() {
-                        console.log('jetfuel interval');
-                        let jetfuel_count = parseInt(this.state.jetfuel_count);
-                        jetfuel_count = jetfuel_count + 1;
-                        this.setState({jetfuel_count: jetfuel_count});
-                    }.bind(this),
-                    rate
-                );
-            }.bind(this));
+        // fetch('/jetfuel_install_rate')
+        //     .then(response => response.json())
+        //     .then(function(response) {
+        //         let jetfuel_count = response['num_installs'];
+        //         let rate = parseInt(response['rate']);
+        //         console.log("Jetfuel Count: " + jetfuel_count);
+        //         console.log("Total Rate: " + rate);
+        //         this.setState({jetfuel_count: jetfuel_count});
+        //         setInterval(
+        //             function() {
+        //                 console.log('jetfuel interval');
+        //                 let jetfuel_count = parseInt(this.state.jetfuel_count);
+        //                 jetfuel_count = jetfuel_count + 1;
+        //                 this.setState({jetfuel_count: jetfuel_count});
+        //             }.bind(this),
+        //             rate
+        //         );
+        //     }.bind(this));
     }
 
     render() {
@@ -101,9 +101,9 @@ class IndexPage extends React.Component {
                 <h2>Latest</h2>
                 <p>
                     A few months ago we started <a href="https://www.jetfuel.it">JetFuel</a>, an influencer driven app
-                    promotion service. To date,
-                    we’ve delivered <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs to some of the top
+                    promotion service. We’ve delivered millions of installs to some of the top
                     companies in mobile!
+                    {/*<Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link>*/}
                     {/*, like <a href="http://www.calm.com">Calm</a>, <a href="http://www.mammoth.la">Mammoth</a>,*/}
                     {/*and <a href="http://www.anchorfree.com">AnchorFree</a>.*/}
                 </p>
