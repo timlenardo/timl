@@ -180,7 +180,7 @@ class AppsPage extends React.Component {
             {/*id="Snapball"*/}
             {/*image={Snapball}*/}
             {/*icon={SnapballIcon}*/}
-            {/*cover={SnapballCover}*/}clae
+            {/*cover={SnapballCover}*/}
             {/*gif={SnapballGif}*/}
             {/*title="Snapball"*/}
             {/*subtitle="Challenge friends on Snap"*/}
