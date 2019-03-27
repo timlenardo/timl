@@ -145,17 +145,17 @@ class AppsPage extends React.Component {
             subtitle="Get all the photos of you"
             isPhone={true}
           />
-          <AppCard
-            id="CaptionPro"
-            image={CaptionPro}
-            icon={CaptionProIcon}
-            cover={CaptionProCover}
-            gif={CaptionProGif}
-            redirectUrl={"https://itunes.apple.com/app/id1332954872"}
-            title="Caption Pro"
-            subtitle="Step up your caption game"
-            isPhone={true}
-          />
+          {/*<AppCard*/}
+            {/*id="CaptionPro"*/}
+            {/*image={CaptionPro}*/}
+            {/*icon={CaptionProIcon}*/}
+            {/*cover={CaptionProCover}*/}
+            {/*gif={CaptionProGif}*/}
+            {/*redirectUrl={"https://itunes.apple.com/app/id1332954872"}*/}
+            {/*title="Caption Pro"*/}
+            {/*subtitle="Step up your caption game"*/}
+            {/*isPhone={true}*/}
+          {/*/>*/}
           <AppCard
             id="Devilish"
             image={Devilish}
