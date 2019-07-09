@@ -217,7 +217,7 @@ rlinstance.getApps(function(error, data) {
 });
 
 
-axios.get('https://www.plugco.in/installs')
+axios.get('https://www.plugco.in/public/installs')
     .then(response => {
         var count = parseInt(response['data']['count']);
         db.InstallCount.create({
