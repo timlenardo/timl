@@ -1,32 +1,32 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-69b4f12589ffdcfa9584.js",
-      "component---src-pages-index-js-69b4f12589ffdcfa9584.js.map"
+      "component---src-pages-index-js-8d9993879fed1a04bbcc.js",
+      "component---src-pages-index-js-8d9993879fed1a04bbcc.js.map"
     ],
     "path---": [
-      "path----7115adeaff03295ab7d4.js",
-      "path----7115adeaff03295ab7d4.js.map"
+      "path----e6e777c002f04cdd9ee4.js",
+      "path----e6e777c002f04cdd9ee4.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-4bc7926b692568e1690e.js",
       "component---src-pages-contact-js-4bc7926b692568e1690e.js.map"
     ],
     "component---src-pages-apps-js": [
-      "component---src-pages-apps-js-f7c3bf664115e9e6ef0a.js",
-      "component---src-pages-apps-js-f7c3bf664115e9e6ef0a.js.map"
+      "component---src-pages-apps-js-9551667ad4c3c7757f1d.js",
+      "component---src-pages-apps-js-9551667ad4c3c7757f1d.js.map"
     ],
     "component---src-pages-speaking-js": [
       "component---src-pages-speaking-js-9dfecc59ecf4c22e487c.js",
       "component---src-pages-speaking-js-9dfecc59ecf4c22e487c.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-d852b41809e3528fb05c.js",
-      "component---src-layouts-index-js-d852b41809e3528fb05c.js.map"
+      "component---src-layouts-index-js-e525ef6fc560c3f02bfe.js",
+      "component---src-layouts-index-js-e525ef6fc560c3f02bfe.js.map"
     ],
     "path---index": [
-      "path---index-001029fa794db815e8f2.js",
-      "path---index-001029fa794db815e8f2.js.map"
+      "path---index-6864c15ff8c64b330221.js",
+      "path---index-6864c15ff8c64b330221.js.map"
     ],
     "path---speaking": [
       "path---speaking-a0e39f21c11f6a62c5ab.js",
@@ -37,8 +37,8 @@
       "path---writing-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-ea685e1ae8d80364a7ca.js",
-      "commons-ea685e1ae8d80364a7ca.js.map"
+      "commons-187d6e8d6bbd3792dbc9.js",
+      "commons-187d6e8d6bbd3792dbc9.js.map"
     ],
     "component---src-pages-writing-js": [
       "component---src-pages-writing-js-5702571c9f7faeeb17c0.js",
@@ -49,8 +49,8 @@
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-275b7de6318ff27b51b1.js",
-      "app-275b7de6318ff27b51b1.js.map"
+      "app-d5a59b62c23e09fae77a.js",
+      "app-d5a59b62c23e09fae77a.js.map"
     ],
     "path---apps": [
       "path---apps-a0e39f21c11f6a62c5ab.js",

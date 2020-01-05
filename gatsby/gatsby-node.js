@@ -4,8 +4,8 @@ const crypto = require('crypto');
 exports.sourceNodes = async ({ boundActionCreators }) => {
     const { createNode } = boundActionCreators;
 
-    const fetchInstalls = () => axios.get('http://plugco.in/installs');
-    const fetchInstalls5Min = () => axios.get('http://plugco.in/installs_5_min');
+    const fetchInstalls = () => axios.get('http://plugco.in/public/installs');
+    const fetchInstalls5Min = () => axios.get('http://plugco.in/public/installs_5_min');
 
     const installsRes = await fetchInstalls();
     const installs5MinRes = await fetchInstalls5Min();

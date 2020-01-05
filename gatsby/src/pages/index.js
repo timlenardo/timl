@@ -101,9 +101,8 @@ class IndexPage extends React.Component {
                 <h2>Latest</h2>
                 <p>
                     A few months ago we started <a href="https://www.jetfuel.it">JetFuel</a>, an influencer driven app
-                    promotion service. We’ve delivered millions of installs to some of the top
+                    promotion service. We’ve delivered <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs to some of the top
                     companies in mobile!
-                    {/*<Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link>*/}
                     {/*, like <a href="http://www.calm.com">Calm</a>, <a href="http://www.mammoth.la">Mammoth</a>,*/}
                     {/*and <a href="http://www.anchorfree.com">AnchorFree</a>.*/}
                 </p>
