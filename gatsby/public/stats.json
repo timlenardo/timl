@@ -1,32 +1,32 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-8d9993879fed1a04bbcc.js",
-      "component---src-pages-index-js-8d9993879fed1a04bbcc.js.map"
+      "component---src-pages-index-js-c6d04d58bf41665e01e8.js",
+      "component---src-pages-index-js-c6d04d58bf41665e01e8.js.map"
     ],
     "path---": [
-      "path----e6e777c002f04cdd9ee4.js",
-      "path----e6e777c002f04cdd9ee4.js.map"
+      "path----313389615e490f48a732.js",
+      "path----313389615e490f48a732.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-4bc7926b692568e1690e.js",
       "component---src-pages-contact-js-4bc7926b692568e1690e.js.map"
     ],
     "component---src-pages-apps-js": [
-      "component---src-pages-apps-js-9551667ad4c3c7757f1d.js",
-      "component---src-pages-apps-js-9551667ad4c3c7757f1d.js.map"
+      "component---src-pages-apps-js-e2b3e6e95fcd2fe62687.js",
+      "component---src-pages-apps-js-e2b3e6e95fcd2fe62687.js.map"
     ],
     "component---src-pages-speaking-js": [
       "component---src-pages-speaking-js-9dfecc59ecf4c22e487c.js",
       "component---src-pages-speaking-js-9dfecc59ecf4c22e487c.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e525ef6fc560c3f02bfe.js",
-      "component---src-layouts-index-js-e525ef6fc560c3f02bfe.js.map"
+      "component---src-layouts-index-js-21eb5736ea78616f0cc4.js",
+      "component---src-layouts-index-js-21eb5736ea78616f0cc4.js.map"
     ],
     "path---index": [
-      "path---index-6864c15ff8c64b330221.js",
-      "path---index-6864c15ff8c64b330221.js.map"
+      "path---index-e5dd5c212823d984229f.js",
+      "path---index-e5dd5c212823d984229f.js.map"
     ],
     "path---speaking": [
       "path---speaking-a0e39f21c11f6a62c5ab.js",
