@@ -9,11 +9,12 @@ import AppCard from '../components/appcard';
 import ThePlug from '../img/thumbnails/ThePlug.png';
 import ThePlugIcon from '../components/icon/ThePlug.icon';
 import ThePlugCover from '../img/covers/plug.png';
-import ThePlugGif from '../img/gifs/plug.gif';
+let ThePlugGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/plug.gif?alt=media&token=46a8624f-7b04-4cf1-82a0-a128fb6297ad';
+
 import JetFuel from '../img/thumbnails/JetFuel.png';
 import JetFuelIcon from '../components/icon/JetFuel.icon';
 import JetFuelCover from '../img/covers/jetfuel.png';
-import JetFuelGif from '../img/gifs/jetfuel.gif';
+let JetFuelGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/jetfuel.gif?alt=media&token=f4fcc545-0ed5-436e-9b82-71ebe07bcb2b';
 
 const downloadTimes = 1820934;
 

@@ -22,126 +22,153 @@ import GoatCoverHover from '../img/covers/goatHover.png';
 import Fontmaker from '../img/thumbnails/Fontmaker.png';
 import FontmakerIcon from '../img/icons/fontmaker2.png';
 import FontmakerCover from '../img/covers/fontmaker.png';
-import FontmakerGif from '../img/gifs/fontmaker.gif';
 import FontmakerBanner from '../img/banners/fontmaker.png';
+let FontmakerGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/fontmaker.gif?alt=media&token=e04aa7eb-7e3e-49a9-89eb-3e623067f2bf';
+
 import Copypaste from '../img/thumbnails/Copypaste.png';
 import CopypasteIcon from '../img/icons/copypaste2.png';
 import CopypasteCover from '../img/covers/copypaste.png';
-import CopypasteGif from '../img/gifs/copypaste.gif';
 import CopypasteBanner from '../img/banners/fontkey2.png';
+let CopypasteGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/copypaste.gif?alt=media&token=601d7b11-fdeb-4240-8424-8beeb196a604';
+
 import Vibe from '../img/thumbnails/Vibe.png';
 import VibeIcon from '../img/icons/vibe2.png';
 import VibeCover from '../img/covers/vibe.png';
-import VibeGif from '../img/gifs/vibe.gif';
 import VibeBanner from '../img/banners/vibe2.png';
+let VibeGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/vibe.gif?alt=media&token=f8d9785f-4571-4735-95ba-caa8be547e2d';
+
 import Litstick from '../img/thumbnails/Litstick.png';
 import LitstickIcon from '../img/icons/litstick2.png';
 import LitstickCover from '../img/covers/litstick.png';
-import LitstickGif from '../img/gifs/litstick.gif';
 import LitstickBanner from '../img/banners/litstick3.png';
+let LitstickGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/litstick.gif?alt=media&token=f38b4d86-b182-4228-b550-998f19a3137e';
+
 import Fontkey from '../img/thumbnails/FontKey.png';
 import FontkeyIcon from '../img/icons/fontkey2.png';
 import FontkeyCover from '../img/covers/fontkey.png';
-import FontkeyGif from '../img/gifs/fontkey3.gif';
 import FontkeyBanner from '../img/banners/fontkey2.png';
+let FontkeyGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/fontkey3.gif?alt=media&token=3dcfb39a-3f44-409b-9f63-203680574224';
+
 import Celebs from '../img/thumbnails/Celebs.png';
 import CelebsIcon from '../img/icons/celebs2.png';
 import CelebsCover from '../img/covers/celebs.png';
-import CelebsGif from '../img/gifs/celebs.gif';
 import CelebsBanner from '../img/banners/celebs.png';
+let CelebsGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/celebs.gif?alt=media&token=04f66dce-b30c-4a29-baee-eea371cdef89';
 
 // Refined Media
 import Spooky from '../img/thumbnails/spookyCover.png';
 import SpookyIcon from '../img/icons/spookypost.svg';
 import SpookyCover from '../img/covers/spooky.png';
-import SpookyGif from '../img/gifs/spooky.gif';
+let SpookyGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/spooky.gif?alt=media&token=e5cb07d7-57cb-45ce-aced-de68c2907236';
+
 import Relate from '../img/thumbnails/relateCover.png';
 import RelateIcon from '../img/icons/relate.svg';
 import RelateCover from '../img/covers/relate.png';
-import RelateGif from '../img/gifs/relate.gif';
+let RelateGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/relate.gif?alt=media&token=34130984-80e1-4aa8-b91a-310067813dc4';
+
 import Camm from '../img/thumbnails/cammCover.png';
 import CammIcon from '../img/icons/camm.svg';
 import CammCover from '../img/covers/camm.png';
-import CammGif from '../img/gifs/camm.gif';
+let CammGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/camm.gif?alt=media&token=4f89bf54-84c7-4e78-b254-4b2348c82785';
+
 import Satiating from '../img/thumbnails/satiatingCover.png';
 import SatiatingIcon from '../img/icons/satiating.svg';
 import SatiatingCover from '../img/covers/satiating.png';
-import SatiatingGif from '../img/gifs/satiating.gif';
+let SatiatingGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/satiating.gif?alt=media&token=645a2bc3-78ea-41e6-893f-db60f39c8682';
+
 import Jessie from '../img/thumbnails/jessieCover.png';
 import JessieIcon from '../img/icons/jessie.svg';
 import JessieCover from '../img/covers/jessie.png';
-import JessieGif from '../img/gifs/jessie.gif';
+let JessieGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/jessie.gif?alt=media&token=a7ce0d18-6783-49b2-ac85-864bdd2a0aff';
+
 import Physics from '../img/thumbnails/physicsCover.png';
 import PhysicsIcon from '../img/icons/physics.svg';
 import PhysicsCover from '../img/covers/physics.png';
-import PhysicsGif from '../img/gifs/physics.gif';
+let PhysicsGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/physics.gif?alt=media&token=6b631420-4ba8-44fa-aa3a-3bcdb2954a67';
 
 // Real Labs
 import Vivify from '../img/thumbnails/Vivify.png';
 import VivifyIcon from '../components/icon/Vivify.icon';
 import VivifyCover from '../img/covers/swing.png';
-import VivifyGif from '../img/gifs/swing.gif';
+let VivifyGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/swing.gif?alt=media&token=6b237eb2-cff4-4bef-8a46-a7117abddcd6';
+
 import ThePlug from '../img/thumbnails/ThePlug.png';
 import ThePlugIcon from '../components/icon/ThePlug.icon';
 import ThePlugCover from '../img/covers/plug.png';
-import ThePlugGif from '../img/gifs/plug.gif';
+let ThePlugGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/plug.gif?alt=media&token=46a8624f-7b04-4cf1-82a0-a128fb6297ad';
+
 import JetFuel from '../img/thumbnails/JetFuel.png';
 import JetFuelIcon from '../components/icon/JetFuel.icon';
 import JetFuelCover from '../img/covers/jetfuel.png';
-import JetFuelGif from '../img/gifs/jetfuel.gif';
+let JetFuelGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/jetfuel.gif?alt=media&token=f4fcc545-0ed5-436e-9b82-71ebe07bcb2b';
+
 import Kthx from '../img/thumbnails/Kthx.png';
 import KthxIcon from '../components/icon/Kthx.icon';
 import KthxCover from '../img/covers/kthx.png';
-import KthxGif from '../img/gifs/kthx2.gif'
+let KthxGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/kthx2.gif?alt=media&token=8b4336f1-1c3b-4954-a0d1-9a0a5e9a5716'
+
 import CaptionPro from '../img/thumbnails/CaptionPro.png';
 import CaptionProIcon from '../components/icon/CaptionPro.icon';
 import CaptionProCover from '../img/covers/cappro.png';
-import CaptionProGif from '../img/gifs/cappro.gif';
+let CaptionProGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/cappro.gif?alt=media&token=b92f5fb5-342a-47fb-8d95-cfe5a4ed2f2f';
+
 import Devilish from '../img/thumbnails/Devilish.png';
 import DevilishIcon from '../components/icon/Devilish.icon';
 import DevilishCover from '../img/covers/devilish.png';
+
 import Mango from '../img/thumbnails/Mango.png';
 import MangoIcon from '../components/icon/Mango.icon';
 import MangoCover from '../img/covers/mango.png';
-import MangoGif from '../img/gifs/mango.gif';
+let MangoGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/mango.gif?alt=media&token=d060b67a-582f-4e01-bc0e-455cbfb35753';
+
 import Snapball from '../img/thumbnails/Snapball.png';
 import SnapballIcon from '../components/icon/Snapball.icon';
 import SnapballCover from '../img/covers/snapball.png';
-import SnapballGif from '../img/gifs/snapball.gif';
+let SnapballGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/snapball.gif?alt=media&token=78e93b5b-7120-4737-9173-8d830e426d15';
+
 import ChattyAf from '../img/thumbnails/ChattyAf.png';
 import ChattyAfIcon from '../components/icon/ChattyAf.icon';
 import ChattyCover from '../img/covers/chatty.png';
-import ChattyGif from '../img/gifs/chatty.gif';
+let ChattyGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/chatty.gif?alt=media&token=f8d6bdde-d25d-4837-92cc-15d0a60fdf79';
+
 import ColorMeme from '../img/thumbnails/ColorMeme.png';
 import ColorMemeCover from '../img/covers/colormeme.png';
-import ColorMemeGif from '../img/gifs/colormeme.gif';
 import ColorMemeIcon from '../components/icon/ColorMeme.icon';
+let ColorMemeGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/colormeme.gif?alt=media&token=f0fa06f9-1572-4e12-8547-0e905822b2ae';
+
 import BallGates from '../img/thumbnails/BallGates.png';
 import BallGatesCover from '../img/covers/ballgates.png';
-import BallGatesGif from '../img/gifs/ballgates.gif';
 import BallGatesIcon from '../components/icon/BallGates.icon';
+let BallGatesGif='https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/ballgates.gif?alt=media&token=b6bac731-98e2-4224-8ca3-1da96e306e10';
+
 import BombDodger from '../img/thumbnails/BombDodger.png';
 import BombDodgerIcon from '../components/icon/BombDodger.icon';
 import BombDodgerCover from '../img/covers/bombdodger.png';
-import BombDodgerGif from '../img/gifs/bombdodger.gif';
+let BombDodgerGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/bombdodger.gif?alt=media&token=c1b29ceb-cbad-4eaf-815d-86a66e7c3ca2';
+
 import BallzDrop from '../img/thumbnails/BallzDrop.png';
 import BallzDropIcon from '../components/icon/BallzDrop.icon';
 import BallzDropCover from '../img/covers/ballzdrop.png';
-import BallzDropGif from '../img/gifs/ballzdrop.gif';
+let BallzDropGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/ballzdrop.gif?alt=media&token=d7645adf-3fa5-42cb-ab05-9c7debafdcc8';
+
 import Spiral3D from '../img/thumbnails/Spiral3D.png';
 import Spiral3DIcon from '../components/icon/Spiral3D.icon';
 import Spiral3DCover from '../img/covers/spiral3d.png';
-import Spiral3DGif from '../img/gifs/spiral3d.gif';
+// import Spiral3DGif from '../img/gifs/spiral3d.gif';
+
 import Boomerang from '../img/thumbnails/Boomerang.png';
 import BoomerangIcon from '../components/icon/Boomerang.icon';
 import BoomerangCover from '../img/covers/boomerang.png';
-import BoomerangGif from '../img/gifs/boomerang.gif';
+let BoomerangGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/boomerang.gif?alt=media&token=89daa598-9cb9-40bc-a5fd-6300b7fee65e';
+
 import Filter from '../img/thumbnails/Filters.png';
 import FilterCover from '../img/covers/filters.png';
-import FilterGif from '../img/gifs/filters.gif';
+let FilterGif='https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/filters.gif?alt=media&token=2ebd6230-6137-4e1f-8944-7d162e13e51a';
+
 import FadeAndColor from '../img/thumbnails/FadeAndColor.png';
 import FadeAndColorCover from '../img/covers/fade.png';
-import FadeAndColorGif from '../img/gifs/fade.gif';
+let FadeAndColorGif = 'https://firebasestorage.googleapis.com/v0/b/timl-85b4a.appspot.com/o/fade.gif?alt=media&token=083dd3d3-2ce3-465d-bcd5-86a3678b8ba1';
+
 import InstagramIcon from '../components/icon/Instagram.icon';
 
 class AppsPage extends React.Component {
