@@ -16,9 +16,9 @@ const Footer = ({ className }) => (
       <div className="row no-gutters">
         <div className="col-12 col-lg-6">
           <p>
-            Want to stay up to date with Real Labs?
+            Want to stay up to date?
             <br />
-            Subscribe to our monthly newsletter:
+            Subscribe to my monthly newsletter:
           </p>
         </div>
         <div className="col-12 col-lg-6 mb-4 mb-lg-0">

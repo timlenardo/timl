@@ -70,8 +70,7 @@ class IndexPage extends React.Component {
 
                 <h2>About</h2>
                 <p>
-                    I <Link to="/apps">make apps</Link>, and occasionally{' '}
-                    <Link to="/writing">write about it</Link>.
+                    I like to make things, mostly <Link to="/apps"> apps</Link>.
                 </p>
 
                 <p>
@@ -94,18 +93,43 @@ class IndexPage extends React.Component {
                 </p>
 
                 <p>
+                    While building apps, we stumbled upon influencer
+                    marketing as great way to promote our products. In early 2018,
+                    we launched <Link to="/apps#Jetfuel"> JetFuel </Link> and <Link to="/apps#Plug">the Plug</Link> to help other companies scale
+                    influencer campaigns. We’ve delivered  <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs
+                    for our partners and paid millions to influencers.
+                </p>
+
+                <p>
+                    Once JetFuel started gaining traction, we launched two
+                    subsidiary businesses: <Link to="/apps#Takeoff"> Takeoff Labs </Link> and <Link to="/apps#Refined">Refined Media </Link>.
+                </p>
+
+                <p>
+                    <Link to="/apps#Takeoff"> Takeoff Labs </Link> is an app studio focused on social consumer experiences that partners with JetFuel for marketing. Since launching, we’ve released numerous Top 100 apps, with 10s of millions of installs across our titles.
+                </p>
+
+                <p>
+                    <Link to="/apps#Refined">Refined Media </Link> is a next generation media company, comprised of popular pages on Instagram, Snapchat, and TikTok. We reach over 50M followers, producing well over 1B monthly impressions.
+                </p>
+
+                <p>
+                    In mid-2021, JetFuel was <a href="https://vungle.com/blog/vungle-acquires-jetfuel-entering-the-emerging-creator-economy/">acquired</a> by Blackstone-owned Vungle, which <a href="https://liftoff.io/blog/liftoff-and-vungle-merge-2/"> merged </a> with Blackstone-owned Liftoff shortly thereafter. I currently serve as the Chief Product Officer of JetFuel within Liftoff+Vungle rollup.
+                </p>
+
+                <p>
                     Want to get in touch? I'm on <a href="https://twitter.com/telenardo">Twitter</a> and <a
                     href="https://www.instagram.com/tim.lenardo/">Instagram</a>. Carpe DM.
                 </p>
 
-                <h2>Latest</h2>
-                <p>
-                    A few months ago we started <a href="https://www.jetfuel.it">JetFuel</a>, an influencer driven app
-                    promotion service. We’ve delivered <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs to some of the top
-                    companies in mobile!
-                    {/*, like <a href="http://www.calm.com">Calm</a>, <a href="http://www.mammoth.la">Mammoth</a>,*/}
-                    {/*and <a href="http://www.anchorfree.com">AnchorFree</a>.*/}
-                </p>
+                <h2>Sample Work</h2>
+                {/*<p>*/}
+                    {/*A few months ago we started <a href="https://www.jetfuel.it">JetFuel</a>, an influencer driven app*/}
+                    {/*promotion service. We’ve delivered <Link id="jetfuel_install_count" to="/">{this.state.jetfuel_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Link> installs to some of the top*/}
+                    {/*companies in mobile!*/}
+                    {/*/!*, like <a href="http://www.calm.com">Calm</a>, <a href="http://www.mammoth.la">Mammoth</a>,*!/*/}
+                    {/*/!*and <a href="http://www.anchorfree.com">AnchorFree</a>.*!/*/}
+                {/*</p>*/}
 
                 {/*<h2>More Works</h2>*/}
 
@@ -131,11 +155,10 @@ class IndexPage extends React.Component {
                         subtitle="Monetize your following"
                         isPhone={true}
                     />
+                    <p>
+                        <Link to="/apps">View All Work</Link>
+                    </p>
                 </div>
-
-                <p>
-                    <Link to="/apps">View All Work</Link>
-                </p>
             </div>
         );
     }

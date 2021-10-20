@@ -6,6 +6,77 @@ import Hero from '../components/hero';
 
 // AppCards
 import AppCard from '../components/appcard';
+import CaseCard from '../components/casecard';
+
+// JetFuel Case studies
+import FitnessCover from '../img/covers/fitness.png';
+import FitnessCoverHover from '../img/covers/fitnessHover.png';
+import CalmCover from '../img/covers/calm.png';
+import CalmCoverHover from '../img/covers/calmHover.png';
+import NanobitCover from '../img/covers/nanobit.png';
+import NanobitCoverHover from '../img/covers/nanobitHover.png';
+import GoatCover from '../img/covers/goat.png';
+import GoatCoverHover from '../img/covers/goatHover.png';
+
+// Takeoff Labs
+import Fontmaker from '../img/thumbnails/Fontmaker.png';
+import FontmakerIcon from '../img/icons/fontmaker2.png';
+import FontmakerCover from '../img/covers/fontmaker.png';
+import FontmakerGif from '../img/gifs/fontmaker.gif';
+import FontmakerBanner from '../img/banners/fontmaker.png';
+import Copypaste from '../img/thumbnails/Copypaste.png';
+import CopypasteIcon from '../img/icons/copypaste2.png';
+import CopypasteCover from '../img/covers/copypaste.png';
+import CopypasteGif from '../img/gifs/copypaste.gif';
+import CopypasteBanner from '../img/banners/fontkey2.png';
+import Vibe from '../img/thumbnails/Vibe.png';
+import VibeIcon from '../img/icons/vibe2.png';
+import VibeCover from '../img/covers/vibe.png';
+import VibeGif from '../img/gifs/vibe.gif';
+import VibeBanner from '../img/banners/vibe2.png';
+import Litstick from '../img/thumbnails/Litstick.png';
+import LitstickIcon from '../img/icons/litstick2.png';
+import LitstickCover from '../img/covers/litstick.png';
+import LitstickGif from '../img/gifs/litstick.gif';
+import LitstickBanner from '../img/banners/litstick3.png';
+import Fontkey from '../img/thumbnails/FontKey.png';
+import FontkeyIcon from '../img/icons/fontkey2.png';
+import FontkeyCover from '../img/covers/fontkey.png';
+import FontkeyGif from '../img/gifs/fontkey3.gif';
+import FontkeyBanner from '../img/banners/fontkey2.png';
+import Celebs from '../img/thumbnails/Celebs.png';
+import CelebsIcon from '../img/icons/celebs2.png';
+import CelebsCover from '../img/covers/celebs.png';
+import CelebsGif from '../img/gifs/celebs.gif';
+import CelebsBanner from '../img/banners/celebs.png';
+
+// Refined Media
+import Spooky from '../img/thumbnails/spookyCover.png';
+import SpookyIcon from '../img/icons/spookypost.svg';
+import SpookyCover from '../img/covers/spooky.png';
+import SpookyGif from '../img/gifs/spooky.gif';
+import Relate from '../img/thumbnails/relateCover.png';
+import RelateIcon from '../img/icons/relate.svg';
+import RelateCover from '../img/covers/relate.png';
+import RelateGif from '../img/gifs/relate.gif';
+import Camm from '../img/thumbnails/cammCover.png';
+import CammIcon from '../img/icons/camm.svg';
+import CammCover from '../img/covers/camm.png';
+import CammGif from '../img/gifs/camm.gif';
+import Satiating from '../img/thumbnails/satiatingCover.png';
+import SatiatingIcon from '../img/icons/satiating.svg';
+import SatiatingCover from '../img/covers/satiating.png';
+import SatiatingGif from '../img/gifs/satiating.gif';
+import Jessie from '../img/thumbnails/jessieCover.png';
+import JessieIcon from '../img/icons/jessie.svg';
+import JessieCover from '../img/covers/jessie.png';
+import JessieGif from '../img/gifs/jessie.gif';
+import Physics from '../img/thumbnails/physicsCover.png';
+import PhysicsIcon from '../img/icons/physics.svg';
+import PhysicsCover from '../img/covers/physics.png';
+import PhysicsGif from '../img/gifs/physics.gif';
+
+// Real Labs
 import Vivify from '../img/thumbnails/Vivify.png';
 import VivifyIcon from '../components/icon/Vivify.icon';
 import VivifyCover from '../img/covers/swing.png';
@@ -21,7 +92,7 @@ import JetFuelGif from '../img/gifs/jetfuel.gif';
 import Kthx from '../img/thumbnails/Kthx.png';
 import KthxIcon from '../components/icon/Kthx.icon';
 import KthxCover from '../img/covers/kthx.png';
-import KthxGif from '../img/gifs/kthx.gif'
+import KthxGif from '../img/gifs/kthx2.gif'
 import CaptionPro from '../img/thumbnails/CaptionPro.png';
 import CaptionProIcon from '../components/icon/CaptionPro.icon';
 import CaptionProCover from '../img/covers/cappro.png';
@@ -96,9 +167,215 @@ class AppsPage extends React.Component {
   render() {
     return (
       <div class="content">
+        <h2 id="Jetfuel">JetFuel</h2>
+        <p>
+            In early 2018, <a href="https://www.linkedin.com/in/jj-maxwell-753b5026/">JJ Maxwell</a> and I launched <a href="www.jetfuel.it">JetFuel</a>, a service enables advertisers to run influencer marketing campaigns at scale. Since launching, we’ve delivered over tens of millions of installs for our partners and paid tens of millions to influencers. In July 2021, JetFuel was <a href="https://vungle.com/blog/vungle-acquires-jetfuel-entering-the-emerging-creator-economy/">acquired</a> by Blackstone-owned Vungle.
+        </p>
+        <div className="appcards">
+            <CaseCard
+                id="FitnessCoach"
+                image={FitnessCover}
+                imageHover={FitnessCoverHover}
+                redirectUrl={"https://www.jetfuel.it/luni"}
+                title="Fitness Coach"
+                subtitle="JetFuel drives Fitness Coach to #1 in the App Store's Health & Fitness Category"
+                isPhone={false}
+            />
+            <CaseCard
+                id="Calm"
+                image={CalmCover}
+                imageHover={CalmCoverHover}
+                redirectUrl={"https://www.jetfuel.it/calm"}
+                title="Calm"
+                subtitle="JetFuel increases Calm's influencer marketing ROI by over 50%"
+                isPhone={false}
+            />
+            <CaseCard
+                id="Nanobit"
+                image={NanobitCover}
+                imageHover={NanobitCoverHover}
+                redirectUrl={"https://www.jetfuel.it/nanobit"}
+                title="Nanobit"
+                subtitle="JetFuel propels Nanobit's MyStory up the top charts, landing at #44 Top Free Game"
+                isPhone={false}
+            />
+            <CaseCard
+                id="Goat"
+                image={GoatCover}
+                imageHover={GoatCoverHover}
+                redirectUrl={"https://www.jetfuel.it/goat"}
+                title="Goat Games"
+                subtitle="GOAT Games unlocks the iOS market with Jetfuel."
+                isPhone={false}
+            />
+            <p>
+                <a href="https://www.jetfuel.it/casestudy"> See More </a>
+            </p>
+        </div>
+
+
+        <h2 id="Takeoff">Takeoff Labs</h2>
+        <p>
+            In 2019, I launched <a href="https://takeoff-labs.com/">Takeoff Labs</a> with <a href="https://www.linkedin.com/in/rhai/"> Rhai Goburdhun </a> and <a href="https://www.linkedin.com/in/jj-maxwell-753b5026/">JJ Maxwell</a>. Takeoff is an app studio focused on social consumer experiences that partners with JetFuel for marketing. Since launching, we’ve released numerous Top 100 apps, with 10s of millions of installs across our titles.
+        </p>
+        <div className="appcards">
+          <AppCard
+            id="FontMaker"
+            image={Fontmaker}
+            iconImg={FontmakerIcon}
+            cover={FontmakerCover}
+            gif={FontmakerGif}
+            banner={FontmakerBanner}
+            redirectUrl={"https://apps.apple.com/us/app/fontmaker-font-keyboard-app/id1573791613"}
+            title="FontMaker"
+            subtitle="Draw your own font"
+            isPhone={true}
+          />
+            <AppCard
+                id="LitStick"
+                image={Litstick}
+                iconImg={LitstickIcon}
+                cover={LitstickCover}
+                gif={LitstickGif}
+                banner={LitstickBanner}
+                redirectUrl={"https://apps.apple.com/us/app/litstick-best-stickers-app/id1472619338"}
+                title="LitStick"
+                subtitle="Best sticker app"
+                isPhone={true}
+            />
+            <AppCard
+                id="Celebs"
+                image={Celebs}
+                iconImg={CelebsIcon}
+                cover={CelebsCover}
+                gif={CelebsGif}
+                banner={CelebsBanner}
+                redirectUrl={"https://apps.apple.com/us/app/celebs-celebrity-look-alike/id1488127870"}
+                title="Celebs"
+                subtitle="Find your celebrity look-a-like"
+                isPhone={true}
+            />
+            <AppCard
+                id="Vibe"
+                image={Vibe}
+                iconImg={VibeIcon}
+                cover={VibeCover}
+                gif={VibeGif}
+                banner={VibeBanner}
+                redirectUrl={"https://apps.apple.com/us/app/vibe-make-new-friends/id1464078094"}
+                title="Vibe"
+                subtitle="Make new friends"
+                isPhone={true}
+            />
+            <AppCard
+            id="CopyPaste"
+            image={Copypaste}
+            iconImg={CopypasteIcon}
+            cover={CopypasteCover}
+            gif={CopypasteGif}
+            banner={CopypasteBanner}
+            redirectUrl={"https://apps.apple.com/us/app/copypaste-auto-keyboard/id1571506312"}
+            title="CopyPaste"
+            subtitle="Fast copy & paste keyboard"
+            isPhone={true}
+          />
+          <AppCard
+            id="FontKey"
+            image={Fontkey}
+            iconImg={FontkeyIcon}
+            cover={FontkeyCover}
+            gif={FontkeyGif}
+            banner={FontkeyBanner}
+            redirectUrl={"https://apps.apple.com/us/app/fontkey-fonts-keyboard-emoji/id1261719303"}
+            title="FontKey"
+            subtitle="Fun font keyboard"
+            isPhone={true}
+          />
+            <p>
+                <a href="https://apps.apple.com/us/developer/takeoff-labs-llc/id1512926926"> See More </a>
+            </p>
+        </div>
+        <h2 id="Refined">Refined Media</h2>
+          <p>
+              Since mid-2020, JetFuel has been acquiring and building social media pages, which we spun off into a new division,  <a href="www.refinedmedia.io">Refined Media</a>. With <a href="https://www.linkedin.com/in/aidan-quest-107b57112/">Aidan Quest</a> at the helm, we own and operate 50+ social media pages across Snapchat, TikTok, and Intagram. We reach over 50M followers, producing well over 1B monthly impressions.
+          </p>
+          <div className="appcards">
+              <AppCard
+                  id="Spookypost"
+                  image={Spooky}
+                  iconImg={SpookyIcon}
+                  cover={SpookyCover}
+                  gif={SpookyGif}
+                  redirectUrl={"https://www.tiktok.com/@spookypost?"}
+                  title="@spookypost"
+                  subtitle="1.3M on TikTok"
+                  isPhone={true}
+              />
+              <AppCard
+                  id="Relate"
+                  image={Relate}
+                  iconImg={RelateIcon}
+                  cover={RelateCover}
+                  gif={RelateGif}
+                  redirectUrl={"https://www.instagram.com/@relate?"}
+                  title="@relate"
+                  subtitle="2.2M on Instagram"
+                  isPhone={true}
+              />
+              <AppCard
+                  id="Cam"
+                  image={Camm}
+                  iconImg={CammIcon}
+                  cover={CammCover}
+                  gif={CammGif}
+                  redirectUrl={"https://www.tiktok.com/@cammsays?"}
+                  title="@cammsays"
+                  subtitle="980K on TikTok"
+                  isPhone={true}
+              />
+
+              <AppCard
+                  id="Satiating"
+                  image={Satiating}
+                  iconImg={SatiatingIcon}
+                  cover={SatiatingCover}
+                  gif={SatiatingGif}
+                  redirectUrl={"https://www.snapchat.com/add/satiating"}
+                  title="@relate"
+                  subtitle="670K on Snapchat"
+                  isPhone={true}
+              />
+              <AppCard
+                  id="Physics"
+                  image={Physics}
+                  iconImg={PhysicsIcon}
+                  cover={PhysicsCover}
+                  gif={PhysicsGif}
+                  redirectUrl={"https://www.instagram.com/@physics?"}
+                  title="@physics"
+                  subtitle="1.5M on Instagram"
+                  isPhone={true}
+              />
+              <AppCard
+                  id="Jessie"
+                  image={Jessie}
+                  iconImg={JessieIcon}
+                  cover={JessieCover}
+                  gif={JessieGif}
+                  redirectUrl={"https://www.tiktok.com/@jessieguth?"}
+                  title="@jessieguth"
+                  subtitle="2.1M on TikTok"
+                  isPhone={true}
+              />
+              <p>
+                  <a href="https://www.refinedmedia.io/"> See More </a>
+              </p>
+          </div>
+
+
         <h2 id="RealLabs">Real Labs</h2>
         <p>
-          Since early 2017 we’ve been exploring and launching a variety of social and utility apps.
+          Between 2016-2018, we’ve built a variety of experimental social and utility apps. Real Labs culimated in early 2018 after we launched JetFuel and the Plug, which became our full-time focus.
         </p>
         <div className="appcards">
           <AppCard
@@ -199,7 +476,7 @@ class AppsPage extends React.Component {
         </div>
         <h2 id="JetFuelGames">Games</h2>
         <p>
-          In early 2018, we developed a series of casual games.
+          In early 2018, we developed a series of casual games to help kickstart the demand for JetFuel. Using JetFuel, we were able to drive each of these games into the Top 100 Free Games charts. This got the attention of a lot of game companies, many of which subsequently became JetFuel customers!
         </p>
         <div className="appcards">
           <AppCard

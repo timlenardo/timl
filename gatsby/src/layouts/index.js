@@ -29,11 +29,11 @@ class TemplateWrapper extends React.Component {
   };
 
   componentDidMount() {
-    // Adsense stuff
-    (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-3757931526099106",
-          enable_page_level_ads: true
-     });
+    // // Adsense stuff
+    // (adsbygoogle = window.adsbygoogle || []).push({
+    //       google_ad_client: "ca-pub-3757931526099106",
+    //       enable_page_level_ads: true
+    //  });
   }
 
   handleToggle = () => {
@@ -66,7 +66,7 @@ class TemplateWrapper extends React.Component {
           <meta name="msapplication-TileImage" content={Favicon144}/>
           <meta name="theme-color" content="#ffffff"/>
           <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          {/*<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>*/}
         </Helmet>
         <div className="row no-gutters pre-footer">
           <Nav

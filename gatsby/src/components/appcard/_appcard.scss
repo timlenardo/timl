@@ -13,6 +13,13 @@
     background-color: transparent;
   }
 
+  .banner {
+    position:absolute;
+    z-index:99;
+    margin-top:12px;
+    margin-left:-4px;
+  }
+
   .fill {
     position:absolute;
     width:153px;
@@ -48,6 +55,7 @@
     }
 
     &--subtitle {
+      color: #828692;
       font-size: 0.8125rem;
       font-weight: normal;
     }

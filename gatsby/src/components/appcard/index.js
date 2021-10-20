@@ -35,9 +35,10 @@ class AppCard extends React.Component {
             <div id={this.props.id} className={'AppCard ' + (this.props.className || '')} onMouseEnter={this.hoverOn} onMouseLeave={this.hoverOff} onClick={this.onClick}>
                 <img className={this.props.isPhone ? "fill" : "fillDesktop"} src={this.props.cover}/>
                 <img className={this.props.isPhone ? "fill" : "fillDesktop"} style={this.state.hovering ? visible : hidden} src={this.state.hovering ? this.props.gif : null}/>
+                {this.props.banner ? <img className="banner" src={this.props.banner} width={80} height={42} /> : null }
                 {this.props.isPhone ? <img className="background" src={this.state.hovering ? PhoneFrameSelected : PhoneFrame}/> : null}
                 {this.props.isPhone ? null : <img className="background" src={this.state.hovering ? DesktopFrameSelected : DesktopFrame}/>}
-                <Icon icon={this.props.icon} width={54} height={54}/>
+                {this.props.icon ? <Icon icon={this.props.icon} width={54} height={54}/> : <img src={this.props.iconImg} width={54} height={54}/>}
                 <div className="AppCard-info">
                     <div>
                         <div className="AppCard-info--title">{this.props.title}</div>

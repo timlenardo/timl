@@ -32,11 +32,11 @@ const Nav = ({ onToggle, open }) => {
           About
         </Link>
         <Link activeClassName="active" to="/apps/">
-          Apps
+          Works
         </Link>
-        <Link activeClassName="active" to="/writing/">
-          Writing
-        </Link>
+        {/*<Link activeClassName="active" to="/writing/">*/}
+          {/*Writing*/}
+        {/*</Link>*/}
         <Link activeClassName="active" to="/speaking/">
           Speaking
         </Link>
