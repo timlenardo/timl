@@ -17,7 +17,7 @@
     "jade": "~1.11.0",
     "mailgun-js": "^0.20.0",
     "morgan": "~1.9.0",
-    "pg-search-sequelize": "0.0.10",
+    "pg": "^8.2.1",
     "sequelize": "^6.7.0",
     "sequelize-fixtures": "^1.2.0"
   }

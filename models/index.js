@@ -5,8 +5,6 @@ const numWorkers = process.env.WEB_CONCURRENCY || os.cpus().length;
 const winston = require('../config/appConstants').winston;
 const env = (process.env.DATABASE_URL) ? "prod": "dev";
 
-let SearchModel = require("pg-search-sequelize");
-
 function logging(string) {
     const result = string.match(/error/i);
     if(result) { winston.error(string); }
@@ -68,7 +66,10 @@ if (!global.hasOwnProperty('db')) {
             operatorsAliases: operatorsAliases,
             logging:  logging,
             dialectOptions: {
-                ssl: true
+                ssl: {
+                    require: true,
+                    rejectUnauthorized: false
+                }
             },
             pool: {
                 max: Math.floor(300 / (process.env.WEB_CONCURRENCY || os.cpus().length)),

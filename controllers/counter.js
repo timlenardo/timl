@@ -29,7 +29,7 @@ exports.getInstallTotalRate = async(req, res) => {
             'num_installs' : curCount
         });
     } catch (err) {
-        console.log(err.message);
+        console.log(err);
         res.send({
             'rate' : 3000,
             'num_installs' : 125069207
