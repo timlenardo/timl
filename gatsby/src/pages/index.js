@@ -22,9 +22,31 @@ class IndexPage extends React.Component {
     state = {
         jetfuel_count: 71817527,
         total_count: 239557992,
+        default_jetfuel_rate: 80,
+        default_total_rate: 80,
     }
 
     componentDidMount() {
+        // setInterval(
+        //     function() {
+        //         console.log('total interval');
+        //         let total_count = parseInt(this.state.total_count);
+        //         total_count = total_count + 1;
+        //         this.setState({total_count: total_count});
+        //     }.bind(this),
+        //     this.state.default_total_rate
+        // );
+        //
+        // setInterval(
+        //     function() {
+        //         console.log('jetfuel interval');
+        //         let jetfuel_count = parseInt(this.state.jetfuel_count);
+        //         jetfuel_count = jetfuel_count + 1;
+        //         this.setState({jetfuel_count: jetfuel_count});
+        //     }.bind(this),
+        //     this.state.default_jetfuel_rate
+        // );
+
         fetch('/total_install_rate')
             .then(response => response.json())
             .then(function(response) {
