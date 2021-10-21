@@ -60,6 +60,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+process.on('uncaughtException', function (exception) {
+    console.log(exception); // to see your exception details in the console
+});
+
 module.exports = app;
 
 if(env == 'dev' ) {
