@@ -18,7 +18,7 @@
     "mailgun-js": "^0.20.0",
     "morgan": "~1.9.0",
     "pg-search-sequelize": "0.0.10",
-    "sequelize": "^4.38.0",
-    "sequelize-fixtures": "^0.7.0"
+    "sequelize": "^6.7.0",
+    "sequelize-fixtures": "^1.2.0"
   }
 }

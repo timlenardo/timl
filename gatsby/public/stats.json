@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-d6dc711849e7b617d862.js",
-      "component---src-pages-index-js-d6dc711849e7b617d862.js.map"
+      "component---src-pages-index-js-e391238ccd290e2a103e.js",
+      "component---src-pages-index-js-e391238ccd290e2a103e.js.map"
     ],
     "path---": [
-      "path----fb77eb79829143700453.js",
-      "path----fb77eb79829143700453.js.map"
+      "path----a463256313e3720ecc4e.js",
+      "path----a463256313e3720ecc4e.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-4af9beea89d6332d25d7.js",
@@ -21,12 +21,12 @@
       "component---src-pages-speaking-js-0c03c4fde17e945e7363.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-a3486603f6264d15ab26.js",
-      "component---src-layouts-index-js-a3486603f6264d15ab26.js.map"
+      "component---src-layouts-index-js-fd6b4d3b2e3547cc8377.js",
+      "component---src-layouts-index-js-fd6b4d3b2e3547cc8377.js.map"
     ],
     "path---index": [
-      "path---index-f5f9eeb411cc747483bb.js",
-      "path---index-f5f9eeb411cc747483bb.js.map"
+      "path---index-706d48d2f04b699dbcfe.js",
+      "path---index-706d48d2f04b699dbcfe.js.map"
     ],
     "path---speaking": [
       "path---speaking-a0e39f21c11f6a62c5ab.js",

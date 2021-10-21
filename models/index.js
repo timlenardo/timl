@@ -71,7 +71,7 @@ if (!global.hasOwnProperty('db')) {
                 ssl: true
             },
             pool: {
-                max: 300 / (process.env.WEB_CONCURRENCY || os.cpus().length),
+                max: Math.floor(300 / (process.env.WEB_CONCURRENCY || os.cpus().length)),
                 min: 2,
                 idle: 10000,
                 acquire: 20000
@@ -100,8 +100,8 @@ if (!global.hasOwnProperty('db')) {
     global.db = {
         Sequelize: Sequelize,
         sequelize: sequelize,
-        InstallCount:      sequelize.import(__dirname + '/installCount'),
-        Email: sequelize.import(__dirname + '/email'),
+        InstallCount:      sequelize.define(__dirname + '/installCount'),
+        Email: sequelize.define(__dirname + '/email'),
     };
 
     global.db.Op = Sequelize.Op;
