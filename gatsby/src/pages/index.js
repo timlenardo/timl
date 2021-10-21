@@ -22,68 +22,68 @@ class IndexPage extends React.Component {
     state = {
         jetfuel_count: 71817527,
         total_count: 239557992,
-        default_jetfuel_rate: 80,
-        default_total_rate: 80,
+        default_jetfuel_rate: 1200,
+        default_total_rate: 750,
     }
 
     componentDidMount() {
-        // setInterval(
-        //     function() {
-        //         console.log('total interval');
-        //         let total_count = parseInt(this.state.total_count);
-        //         total_count = total_count + 1;
-        //         this.setState({total_count: total_count});
-        //     }.bind(this),
-        //     this.state.default_total_rate
-        // );
-        //
-        // setInterval(
-        //     function() {
-        //         console.log('jetfuel interval');
-        //         let jetfuel_count = parseInt(this.state.jetfuel_count);
-        //         jetfuel_count = jetfuel_count + 1;
-        //         this.setState({jetfuel_count: jetfuel_count});
-        //     }.bind(this),
-        //     this.state.default_jetfuel_rate
-        // );
-
-        fetch('/total_install_rate')
-            .then(response => response.json())
-            .then(function(response) {
-                let total_count = response['num_installs'];
-                let rate = parseInt(response['rate']);
-                console.log("Total Count: " + total_count);
-                console.log("Total Rate: " + rate);
+        setInterval(
+            function() {
+                console.log('total interval');
+                let total_count = parseInt(this.state.total_count);
+                total_count = total_count + 1;
                 this.setState({total_count: total_count});
-                setInterval(
-                    function() {
-                        console.log('total interval');
-                        let total_count = parseInt(this.state.total_count);
-                        total_count = total_count + 1;
-                        this.setState({total_count: total_count});
-                    }.bind(this),
-                    rate
-                );
-            }.bind(this));
+            }.bind(this),
+            this.state.default_total_rate
+        );
 
-        fetch('/jetfuel_install_rate')
-            .then(response => response.json())
-            .then(function(response) {
-                let jetfuel_count = response['num_installs'];
-                let rate = parseInt(response['rate']);
-                console.log("Jetfuel Count: " + jetfuel_count);
-                console.log("Total Rate: " + rate);
+        setInterval(
+            function() {
+                console.log('jetfuel interval');
+                let jetfuel_count = parseInt(this.state.jetfuel_count);
+                jetfuel_count = jetfuel_count + 1;
                 this.setState({jetfuel_count: jetfuel_count});
-                setInterval(
-                    function() {
-                        console.log('jetfuel interval');
-                        let jetfuel_count = parseInt(this.state.jetfuel_count);
-                        jetfuel_count = jetfuel_count + 1;
-                        this.setState({jetfuel_count: jetfuel_count});
-                    }.bind(this),
-                    rate
-                );
-            }.bind(this));
+            }.bind(this),
+            this.state.default_jetfuel_rate
+        );
+
+        // fetch('/total_install_rate')
+        //     .then(response => response.json())
+        //     .then(function(response) {
+        //         let total_count = response['num_installs'];
+        //         let rate = parseInt(response['rate']);
+        //         console.log("Total Count: " + total_count);
+        //         console.log("Total Rate: " + rate);
+        //         this.setState({total_count: total_count});
+        //         setInterval(
+        //             function() {
+        //                 console.log('total interval');
+        //                 let total_count = parseInt(this.state.total_count);
+        //                 total_count = total_count + 1;
+        //                 this.setState({total_count: total_count});
+        //             }.bind(this),
+        //             rate
+        //         );
+        //     }.bind(this));
+        //
+        // fetch('/jetfuel_install_rate')
+        //     .then(response => response.json())
+        //     .then(function(response) {
+        //         let jetfuel_count = response['num_installs'];
+        //         let rate = parseInt(response['rate']);
+        //         console.log("Jetfuel Count: " + jetfuel_count);
+        //         console.log("Total Rate: " + rate);
+        //         this.setState({jetfuel_count: jetfuel_count});
+        //         setInterval(
+        //             function() {
+        //                 console.log('jetfuel interval');
+        //                 let jetfuel_count = parseInt(this.state.jetfuel_count);
+        //                 jetfuel_count = jetfuel_count + 1;
+        //                 this.setState({jetfuel_count: jetfuel_count});
+        //             }.bind(this),
+        //             rate
+        //         );
+        //     }.bind(this));
     }
 
     render() {

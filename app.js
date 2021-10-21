@@ -75,16 +75,16 @@ if(env == 'dev' ) {
         // });
     });
 } else {
-    db.sequelize.sync({force: true}).then(function() {
+    // db.sequelize.sync({force: true}).then(function() {
           http.createServer(app).listen(app.get('port'), function(){
               console.log('Express server listening on port ' + app.get('port'));
           });
-    }).catch(function(error) {
-        console.log(error.message)
-    }).then(function() {
-        http.createServer(app).listen(app.get('port'), function(){
-            console.log('Express server listening on port ' + app.get('port'));
-        });
-    });
+    // }).catch(function(error) {
+    //     console.log(error.message)
+    // }).then(function() {
+    //     http.createServer(app).listen(app.get('port'), function(){
+    //         console.log('Express server listening on port ' + app.get('port'));
+    //     });
+    // });
 }
 
