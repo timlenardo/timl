@@ -20,8 +20,8 @@ const downloadTimes = 1820934;
 
 class IndexPage extends React.Component {
     state = {
-        jetfuel_count: 2492704,
-        total_count: 125069207,
+        jetfuel_count: 71817527,
+        total_count: 239557992,
     }
 
     componentDidMount() {
